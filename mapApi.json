@@ -1,0 +1,2883 @@
+[
+    {
+        "location": "north_carolina-usa",
+        "LocationInformation": {
+            "address": {
+                "countryCode": "USA",
+                "countryName": "United States",
+                "label": "NC, United States",
+                "state": "North Carolina",
+                "stateCode": "NC"
+            },
+            "position": { "lat": 35.78547, "lng": -78.6427 }
+        }
+    },
+    {
+        "location": "georgia-usa",
+        "LocationInformation": {
+            "address": {
+                "countryCode": "USA",
+                "countryName": "United States",
+                "label": "GA, United States",
+                "state": "Georgia",
+                "stateCode": "GA"
+            },
+            "position": { "lat": 33.74831, "lng": -84.39111 }
+        }
+    },
+    {
+        "location": "los_angeles-usa",
+        "LocationInformation": {
+            "address": {
+                "city": "Los Angeles",
+                "countryCode": "USA",
+                "countryName": "United States",
+                "county": "Los Angeles",
+                "label": "Los Angeles, CA, United States",
+                "postalCode": "90012",
+                "state": "California",
+                "stateCode": "CA"
+            },
+            "position": { "lat": 34.05357, "lng": -118.24545 }
+        }
+    },
+    {
+        "location": "saitama-japan",
+        "LocationInformation": {
+            "address": {
+                "countryCode": "JPN",
+                "countryName": "日本",
+                "label": "埼玉県",
+                "state": "埼玉県"
+            },
+            "position": { "lat": 35.86167, "lng": 139.64554 }
+        }
+    },
+    {
+        "location": "osaka-japan",
+        "LocationInformation": {
+            "address": {
+                "countryCode": "JPN",
+                "countryName": "日本",
+                "label": "大阪府",
+                "state": "大阪府"
+            },
+            "position": { "lat": 34.69373, "lng": 135.50216 }
+        }
+    },
+    {
+        "location": "nagoya-japan",
+        "LocationInformation": {
+            "address": {
+                "city": "名古屋市",
+                "countryCode": "JPN",
+                "countryName": "日本",
+                "label": "愛知県名古屋市",
+                "state": "愛知県"
+            },
+            "position": { "lat": 35.18142, "lng": 136.90668 }
+        }
+    },
+    {
+        "location": "penrose-new_zealand",
+        "LocationInformation": {
+            "address": {
+                "city": "Auckland",
+                "countryCode": "NZL",
+                "countryName": "New Zealand",
+                "county": "Auckland City",
+                "district": "Penrose",
+                "label": "Penrose, Auckland, New Zealand",
+                "postalCode": "1061",
+                "state": "Auckland"
+            },
+            "position": { "lat": -36.91075, "lng": 174.817 }
+        }
+    },
+    {
+        "location": "dunedin-new_zealand",
+        "LocationInformation": {
+            "address": {
+                "city": "Dunedin",
+                "countryCode": "NZL",
+                "countryName": "New Zealand",
+                "county": "Dunedin City",
+                "label": "Dunedin, Otago, New Zealand",
+                "postalCode": "9016",
+                "state": "Otago"
+            },
+            "position": { "lat": -45.87332, "lng": 170.50404 }
+        }
+    },
+    {
+        "location": "playa_del_carmen-mexico",
+        "LocationInformation": {
+            "address": {
+                "city": "Playa del Carmen",
+                "countryCode": "MEX",
+                "countryName": "México",
+                "label": "Playa del Carmen, QRoo, México",
+                "postalCode": "77720",
+                "state": "Quintana Roo",
+                "stateCode": "QRoo"
+            },
+            "position": { "lat": 20.63022, "lng": -87.0711 }
+        }
+    },
+    {
+        "location": "papeete-french_polynesia",
+        "LocationInformation": {
+            "address": {
+                "city": "Papeete",
+                "countryCode": "PYF",
+                "countryName": "Polynésie Française",
+                "label": "Papeete, Îles-du-Vent, Polynésie Française",
+                "postalCode": "98715",
+                "state": "Îles-du-Vent"
+            },
+            "position": { "lat": -17.54471, "lng": -149.57463 }
+        }
+    },
+    {
+        "location": "noumea-new_caledonia",
+        "LocationInformation": {
+            "address": {
+                "city": "Nouméa",
+                "countryCode": "NCL",
+                "countryName": "Nouvelle-Calédonie",
+                "label": "Nouméa, Province Sud, Nouvelle-Calédonie",
+                "postalCode": "98800",
+                "state": "Province Sud"
+            },
+            "position": { "lat": -22.24292, "lng": 166.46133 }
+        }
+    },
+    {
+        "location": "london-uk",
+        "LocationInformation": {
+            "address": {
+                "city": "London",
+                "countryCode": "GBR",
+                "countryName": "United Kingdom",
+                "county": "London",
+                "countyCode": "LDN",
+                "label": "London, England, United Kingdom",
+                "postalCode": "SW1A 2",
+                "state": "England"
+            },
+            "position": { "lat": 51.50643, "lng": -0.12719 }
+        }
+    },
+    {
+        "location": "lausanne-switzerland",
+        "LocationInformation": {
+            "address": {
+                "city": "Lausanne",
+                "countryCode": "CHE",
+                "countryName": "Suisse",
+                "county": "Lausanne",
+                "label": "Lausanne, Vaud, Suisse",
+                "postalCode": "1003",
+                "state": "Vaud",
+                "stateCode": "VD"
+            },
+            "position": { "lat": 46.5196, "lng": 6.63222 }
+        }
+    },
+    {
+        "location": "lyon-france",
+        "LocationInformation": {
+            "address": {
+                "city": "Lyon",
+                "countryCode": "FRA",
+                "countryName": "France",
+                "county": "Rhône",
+                "label": "Lyon, Auvergne-Rhône-Alpes, France",
+                "postalCode": "69002",
+                "state": "Auvergne-Rhône-Alpes",
+                "stateCode": "ARA"
+            },
+            "position": { "lat": 45.75917, "lng": 4.82965 }
+        }
+    },
+    {
+        "location": "victoria-australia",
+        "LocationInformation": {
+            "address": {
+                "countryCode": "AUS",
+                "countryName": "Australia",
+                "label": "Victoria, Australia",
+                "state": "Victoria",
+                "stateCode": "VIC"
+            },
+            "position": { "lat": -37.81739, "lng": 144.96754 }
+        }
+    },
+    {
+        "location": "new_south_wales-australia",
+        "LocationInformation": {
+            "address": {
+                "countryCode": "AUS",
+                "countryName": "Australia",
+                "label": "New South Wales, Australia",
+                "state": "New South Wales",
+                "stateCode": "NSW"
+            },
+            "position": { "lat": -33.86974, "lng": 151.20825 }
+        }
+    },
+    {
+        "location": "queensland-australia",
+        "LocationInformation": {
+            "address": {
+                "countryCode": "AUS",
+                "countryName": "Australia",
+                "label": "Queensland, Australia",
+                "state": "Queensland",
+                "stateCode": "QLD"
+            },
+            "position": { "lat": -27.46845, "lng": 153.02334 }
+        }
+    },
+    {
+        "location": "auckland-new_zealand",
+        "LocationInformation": {
+            "address": {
+                "city": "Auckland",
+                "countryCode": "NZL",
+                "countryName": "New Zealand",
+                "county": "Auckland City",
+                "label": "Auckland, New Zealand",
+                "postalCode": "1010",
+                "state": "Auckland"
+            },
+            "position": { "lat": -36.85232, "lng": 174.76388 }
+        }
+    },
+    {
+        "location": "yogyakarta-indonesia",
+        "LocationInformation": {
+            "address": {
+                "city": "Yogyakarta",
+                "countryCode": "IDN",
+                "countryName": "Indonesia",
+                "county": "Daerah Istimewa Yogyakarta",
+                "countyCode": "DIY",
+                "label": "Yogyakarta, Indonesia",
+                "postalCode": "55111"
+            },
+            "position": { "lat": -7.80178, "lng": 110.3799 }
+        }
+    },
+    {
+        "location": "bratislava-slovakia",
+        "LocationInformation": {
+            "address": {
+                "city": "Bratislava",
+                "countryCode": "SVK",
+                "countryName": "Slovensko",
+                "county": "Bratislava",
+                "label": "Bratislava, Bratislavský kraj, Slovensko",
+                "postalCode": "811 06",
+                "state": "Bratislavský kraj"
+            },
+            "position": { "lat": 48.14924, "lng": 17.10699 }
+        }
+    },
+    {
+        "location": "budapest-hungary",
+        "LocationInformation": {
+            "address": {
+                "city": "Budapest",
+                "countryCode": "HUN",
+                "countryName": "Magyarország",
+                "county": "Budapest",
+                "countyCode": "Bp",
+                "label": "Budapest, Magyarország",
+                "postalCode": "1061",
+                "state": "Budapest",
+                "stateCode": "Bp"
+            },
+            "position": { "lat": 47.49972, "lng": 19.05508 }
+        }
+    },
+    {
+        "location": "minsk-belarus",
+        "LocationInformation": {
+            "address": {
+                "city": "Мінск",
+                "countryCode": "BLR",
+                "countryName": "Беларусь",
+                "county": "Мінск",
+                "label": "Мінск, Беларусь",
+                "postalCode": "220012",
+                "state": "Мінск"
+            },
+            "position": { "lat": 53.89803, "lng": 27.56483 }
+        }
+    },
+    {
+        "location": "california-usa",
+        "LocationInformation": {
+            "address": {
+                "countryCode": "USA",
+                "countryName": "United States",
+                "label": "CA, United States",
+                "state": "California",
+                "stateCode": "CA"
+            },
+            "position": { "lat": 38.57944, "lng": -121.49086 }
+        }
+    },
+    {
+        "location": "nevada-usa",
+        "LocationInformation": {
+            "address": {
+                "countryCode": "USA",
+                "countryName": "United States",
+                "label": "NV, United States",
+                "state": "Nevada",
+                "stateCode": "NV"
+            },
+            "position": { "lat": 39.16505, "lng": -119.76698 }
+        }
+    },
+    {
+        "location": "sao_paulo-brazil",
+        "LocationInformation": {
+            "address": {
+                "city": "São Paulo",
+                "countryCode": "BRA",
+                "countryName": "Brasil",
+                "label": "São Paulo, SP, Brasil",
+                "postalCode": "01310-100",
+                "state": "São Paulo",
+                "stateCode": "SP"
+            },
+            "position": { "lat": -23.56287, "lng": -46.65468 }
+        }
+    },
+    {
+        "location": "san_isidro-argentina",
+        "LocationInformation": {
+            "address": {
+                "countryCode": "ARG",
+                "countryName": "Argentina",
+                "county": "San Isidro",
+                "label": "San Isidro, Buenos Aires, Argentina",
+                "postalCode": "C1642",
+                "state": "Buenos Aires",
+                "stateCode": "BA"
+            },
+            "position": { "lat": -34.47164, "lng": -58.51468 }
+        }
+    },
+    {
+        "location": "arizona-usa",
+        "LocationInformation": {
+            "address": {
+                "countryCode": "USA",
+                "countryName": "United States",
+                "label": "AZ, United States",
+                "state": "Arizona",
+                "stateCode": "AZ"
+            },
+            "position": { "lat": 33.44825, "lng": -112.07581 }
+        }
+    },
+    {
+        "location": "texas-usa",
+        "LocationInformation": {
+            "address": {
+                "countryCode": "USA",
+                "countryName": "United States",
+                "label": "TX, United States",
+                "state": "Texas",
+                "stateCode": "TX"
+            },
+            "position": { "lat": 30.26759, "lng": -97.743 }
+        }
+    },
+    {
+        "location": "stockholm-sweden",
+        "LocationInformation": {
+            "address": {
+                "city": "Stockholm",
+                "countryCode": "SWE",
+                "countryName": "Sverige",
+                "county": "Stockholm",
+                "label": "Stockholm, Stockholms län, Sverige",
+                "postalCode": "111 53",
+                "state": "Stockholms län",
+                "stateCode": "AB"
+            },
+            "position": { "lat": 59.33257, "lng": 18.06683 }
+        }
+    },
+    {
+        "location": "werchter-belgium",
+        "LocationInformation": {
+            "address": {
+                "city": "Rotselaar",
+                "countryCode": "BEL",
+                "countryName": "België",
+                "county": "Vlaams Brabant",
+                "district": "Werchter",
+                "label": "Werchter, Rotselaar, Vlaanderen, België",
+                "postalCode": "3118",
+                "state": "Vlaanderen",
+                "stateCode": "VLG"
+            },
+            "position": { "lat": 50.97048, "lng": 4.69408 }
+        }
+    },
+    {
+        "location": "lisbon-portugal",
+        "LocationInformation": {
+            "address": {
+                "city": "Lisboa",
+                "countryCode": "PRT",
+                "countryName": "Portugal",
+                "county": "Lisboa",
+                "countyCode": "LI",
+                "label": "Lisboa, Portugal",
+                "postalCode": "1050-115"
+            },
+            "position": { "lat": 38.72633, "lng": -9.14951 }
+        }
+    },
+    {
+        "location": "bilbao-spain",
+        "LocationInformation": {
+            "address": {
+                "city": "Bilbao",
+                "countryCode": "ESP",
+                "countryName": "España",
+                "county": "Vizcaya",
+                "label": "Bilbao, País Vasco, España",
+                "postalCode": "48014",
+                "state": "País Vasco",
+                "stateCode": "PV"
+            },
+            "position": { "lat": 43.2689, "lng": -2.94529 }
+        }
+    },
+    {
+        "location": "bogota-colombia",
+        "LocationInformation": {
+            "address": {
+                "city": "Bogotá, D.C.",
+                "countryCode": "COL",
+                "countryName": "Colombia",
+                "county": "Bogotá, D.C.",
+                "countyCode": "DC",
+                "label": "Bogotá, D.C., Colombia",
+                "postalCode": "110311"
+            },
+            "position": { "lat": 4.61496, "lng": -74.06941 }
+        }
+    },
+    {
+        "location": "new_york-usa",
+        "LocationInformation": {
+            "address": {
+                "city": "New York",
+                "countryCode": "USA",
+                "countryName": "United States",
+                "county": "New York",
+                "label": "New York, NY, United States",
+                "postalCode": "10007",
+                "state": "New York",
+                "stateCode": "NY"
+            },
+            "position": { "lat": 40.71453, "lng": -74.00712 }
+        }
+    },
+    {
+        "location": "dusseldorf-germany",
+        "LocationInformation": {
+            "address": {
+                "city": "Düsseldorf",
+                "countryCode": "DEU",
+                "countryName": "Deutschland",
+                "county": "Düsseldorf",
+                "countyCode": "D",
+                "label": "Düsseldorf, Nordrhein-Westfalen, Deutschland",
+                "postalCode": "40217",
+                "state": "Nordrhein-Westfalen",
+                "stateCode": "NW"
+            },
+            "position": { "lat": 51.21564, "lng": 6.77661 }
+        }
+    },
+    {
+        "location": "aarhus-denmark",
+        "LocationInformation": {
+            "address": {
+                "city": "Aarhus",
+                "countryCode": "DNK",
+                "countryName": "Danmark",
+                "county": "Aarhus",
+                "label": "Aarhus, Midtjylland, Danmark",
+                "postalCode": "8000",
+                "state": "Midtjylland"
+            },
+            "position": { "lat": 56.15302, "lng": 10.20486 }
+        }
+    },
+    {
+        "location": "manchester-uk",
+        "LocationInformation": {
+            "address": {
+                "city": "Manchester",
+                "countryCode": "GBR",
+                "countryName": "United Kingdom",
+                "county": "Lancashire",
+                "countyCode": "LAN",
+                "label": "Manchester, England, United Kingdom",
+                "postalCode": "M3 3",
+                "state": "England"
+            },
+            "position": { "lat": 53.47959, "lng": -2.24874 }
+        }
+    },
+    {
+        "location": "frankfurt-germany",
+        "LocationInformation": {
+            "address": {
+                "city": "Frankfurt am Main",
+                "countryCode": "DEU",
+                "countryName": "Deutschland",
+                "county": "Frankfurt am Main",
+                "countyCode": "F",
+                "label": "Frankfurt am Main, Hessen, Deutschland",
+                "postalCode": "60311",
+                "state": "Hessen",
+                "stateCode": "HE"
+            },
+            "position": { "lat": 50.11208, "lng": 8.68341 }
+        }
+    },
+    {
+        "location": "berlin-germany",
+        "LocationInformation": {
+            "address": {
+                "city": "Berlin",
+                "countryCode": "DEU",
+                "countryName": "Deutschland",
+                "county": "Berlin",
+                "countyCode": "B",
+                "label": "Berlin, Deutschland",
+                "postalCode": "10117",
+                "state": "Berlin",
+                "stateCode": "BE"
+            },
+            "position": { "lat": 52.51604, "lng": 13.37691 }
+        }
+    },
+    {
+        "location": "copenhagen-denmark",
+        "LocationInformation": {
+            "address": {
+                "city": "København",
+                "countryCode": "DNK",
+                "countryName": "Danmark",
+                "county": "København",
+                "label": "København, Hovedstaden, Danmark",
+                "postalCode": "1620",
+                "state": "Hovedstaden"
+            },
+            "position": { "lat": 55.67567, "lng": 12.56756 }
+        }
+    },
+    {
+        "location": "doha-qatar",
+        "LocationInformation": {
+            "address": {
+                "city": "الدوحة",
+                "countryCode": "QAT",
+                "countryName": "قطر",
+                "county": "الدوحة",
+                "label": "الدوحة, قطر"
+            },
+            "position": { "lat": 25.29424, "lng": 51.51967 }
+        }
+    },
+    {
+        "location": "minnesota-usa",
+        "LocationInformation": {
+            "address": {
+                "countryCode": "USA",
+                "countryName": "United States",
+                "label": "MN, United States",
+                "state": "Minnesota",
+                "stateCode": "MN"
+            },
+            "position": { "lat": 44.94339, "lng": -93.09649 }
+        }
+    },
+    {
+        "location": "illinois-usa",
+        "LocationInformation": {
+            "address": {
+                "countryCode": "USA",
+                "countryName": "United States",
+                "label": "IL, United States",
+                "state": "Illinois",
+                "stateCode": "IL"
+            },
+            "position": { "lat": 39.8013, "lng": -89.64361 }
+        }
+    },
+    {
+        "location": "mumbai-india",
+        "LocationInformation": {
+            "address": {
+                "city": "Mumbai",
+                "countryCode": "IND",
+                "countryName": "India",
+                "county": "Mumbai",
+                "label": "Mumbai, Maharashtra, India",
+                "postalCode": "400001",
+                "state": "Maharashtra",
+                "stateCode": "MH"
+            },
+            "position": { "lat": 18.94018, "lng": 72.83484 }
+        }
+    },
+    {
+        "location": "abu_dhabi-united_arab_emirates",
+        "LocationInformation": {
+            "address": {
+                "city": "أبوظبي",
+                "countryCode": "ARE",
+                "countryName": "الإمارات العربية المتحدة",
+                "county": "أبوظبي",
+                "label": "أبوظبي, الإمارات العربية المتحدة",
+                "postalCode": "22229"
+            },
+            "position": { "lat": 24.46918, "lng": 54.37173 }
+        }
+    },
+    {
+        "location": "pennsylvania-usa",
+        "LocationInformation": {
+            "address": {
+                "countryCode": "USA",
+                "countryName": "United States",
+                "label": "PA, United States",
+                "state": "Pennsylvania",
+                "stateCode": "PA"
+            },
+            "position": { "lat": 40.25986, "lng": -76.88224 }
+        }
+    },
+    {
+        "location": "westcliff_on_sea-uk",
+        "LocationInformation": {
+            "address": {
+                "city": "Westcliff-on-Sea",
+                "countryCode": "GBR",
+                "countryName": "United Kingdom",
+                "county": "Essex",
+                "countyCode": "ESS",
+                "label": "Westcliff-on-Sea, England, United Kingdom",
+                "postalCode": "SS0 9",
+                "state": "England"
+            },
+            "position": { "lat": 51.54548, "lng": 0.68504 }
+        }
+    },
+    {
+        "location": "merkers-germany",
+        "LocationInformation": {
+            "address": {
+                "city": "Krayenberggemeinde",
+                "countryCode": "DEU",
+                "countryName": "Deutschland",
+                "county": "Wartburgkreis",
+                "countyCode": "WAK",
+                "district": "Merkers",
+                "label": "Merkers, Krayenberggemeinde, Thüringen, Deutschland",
+                "postalCode": "36460",
+                "state": "Thüringen",
+                "stateCode": "TH"
+            },
+            "position": { "lat": 50.82544, "lng": 10.11544 }
+        }
+    },
+    {
+        "location": "maine-usa",
+        "LocationInformation": {
+            "address": {
+                "countryCode": "USA",
+                "countryName": "United States",
+                "label": "ME, United States",
+                "state": "Maine",
+                "stateCode": "ME"
+            },
+            "position": { "lat": 44.31804, "lng": -69.77631 }
+        }
+    },
+    {
+        "location": "gothenburg-sweden",
+        "LocationInformation": {
+            "address": {
+                "city": "Göteborg",
+                "countryCode": "SWE",
+                "countryName": "Sverige",
+                "county": "Göteborg",
+                "label": "Göteborg, Västra Götalands län, Sverige",
+                "postalCode": "411 38",
+                "state": "Västra Götalands län",
+                "stateCode": "O"
+            },
+            "position": { "lat": 57.70067, "lng": 11.96822 }
+        }
+    },
+    {
+        "location": "florida-usa",
+        "LocationInformation": {
+            "address": {
+                "countryCode": "USA",
+                "countryName": "United States",
+                "label": "FL, United States",
+                "state": "Florida",
+                "stateCode": "FL"
+            },
+            "position": { "lat": 30.43977, "lng": -84.28065 }
+        }
+    },
+    {
+        "location": "south_carolina-usa",
+        "LocationInformation": {
+            "address": {
+                "countryCode": "USA",
+                "countryName": "United States",
+                "label": "SC, United States",
+                "state": "South Carolina",
+                "stateCode": "SC"
+            },
+            "position": { "lat": 33.99882, "lng": -81.04537 }
+        }
+    },
+    {
+        "location": "pagney_derriere_barine-france",
+        "LocationInformation": {
+            "address": {
+                "city": "Pagney-derrière-Barine",
+                "countryCode": "FRA",
+                "countryName": "France",
+                "county": "Meurthe-et-Moselle",
+                "label": "Pagney-derrière-Barine, Grand Est, France",
+                "postalCode": "54200",
+                "state": "Grand Est",
+                "stateCode": "GES"
+            },
+            "position": { "lat": 48.69303, "lng": 5.84574 }
+        }
+    },
+    {
+        "location": "hamburg-germany",
+        "LocationInformation": {
+            "address": {
+                "city": "Hamburg",
+                "countryCode": "DEU",
+                "countryName": "Deutschland",
+                "county": "Hamburg",
+                "countyCode": "HH",
+                "label": "Hamburg, Deutschland",
+                "postalCode": "20354",
+                "state": "Hamburg",
+                "stateCode": "HH"
+            },
+            "position": { "lat": 53.55562, "lng": 9.98745 }
+        }
+    },
+    {
+        "location": "boulogne_billancourt-france",
+        "LocationInformation": {
+            "address": {
+                "city": "Boulogne-Billancourt",
+                "countryCode": "FRA",
+                "countryName": "France",
+                "county": "Hauts-de-Seine",
+                "label": "Boulogne-Billancourt, Île-de-France, France",
+                "postalCode": "92100",
+                "state": "Île-de-France",
+                "stateCode": "IDF"
+            },
+            "position": { "lat": 48.83527, "lng": 2.24078 }
+        }
+    },
+    {
+        "location": "nimes-france",
+        "LocationInformation": {
+            "address": {
+                "city": "Nîmes",
+                "countryCode": "FRA",
+                "countryName": "France",
+                "county": "Gard",
+                "label": "Nîmes, Occitanie, France",
+                "postalCode": "30000",
+                "state": "Occitanie",
+                "stateCode": "OCC"
+            },
+            "position": { "lat": 43.83512, "lng": 4.35855 }
+        }
+    },
+    {
+        "location": "sion-switzerland",
+        "LocationInformation": {
+            "address": {
+                "city": "Sion",
+                "countryCode": "CHE",
+                "countryName": "Suisse",
+                "county": "Sion",
+                "label": "Sion, Valais, Suisse",
+                "postalCode": "1950",
+                "state": "Valais",
+                "stateCode": "VS"
+            },
+            "position": { "lat": 46.22809, "lng": 7.35886 }
+        }
+    },
+    {
+        "location": "ostrava-czechia",
+        "LocationInformation": {
+            "address": {
+                "city": "Ostrava",
+                "countryCode": "CZE",
+                "countryName": "Česko",
+                "county": "Ostrava-město",
+                "label": "Ostrava, Moravskoslezský kraj, Česko",
+                "postalCode": "702 00",
+                "state": "Moravskoslezský kraj"
+            },
+            "position": { "lat": 49.83937, "lng": 18.28877 }
+        }
+    },
+    {
+        "location": "klagenfurt-austria",
+        "LocationInformation": {
+            "address": {
+                "city": "Klagenfurt am Wörthersee",
+                "countryCode": "AUT",
+                "countryName": "Österreich",
+                "county": "Klagenfurt",
+                "countyCode": "K",
+                "label": "Klagenfurt am Wörthersee, Kärnten, Österreich",
+                "postalCode": "9020",
+                "state": "Kärnten",
+                "stateCode": "KTN."
+            },
+            "position": { "lat": 46.62056, "lng": 14.31041 }
+        }
+    },
+    {
+        "location": "freyming_merlebach-france",
+        "LocationInformation": {
+            "address": {
+                "city": "Freyming-Merlebach",
+                "countryCode": "FRA",
+                "countryName": "France",
+                "county": "Moselle",
+                "label": "Freyming-Merlebach, Grand Est, France",
+                "postalCode": "57800",
+                "state": "Grand Est",
+                "stateCode": "GES"
+            },
+            "position": { "lat": 49.1439, "lng": 6.79184 }
+        }
+    },
+    {
+        "location": "zaragoza-spain",
+        "LocationInformation": {
+            "address": {
+                "city": "Zaragoza",
+                "countryCode": "ESP",
+                "countryName": "España",
+                "county": "Zaragoza",
+                "label": "Zaragoza, Aragón, España",
+                "postalCode": "50001",
+                "state": "Aragón",
+                "stateCode": "AR"
+            },
+            "position": { "lat": 41.65183, "lng": -0.88114 }
+        }
+    },
+    {
+        "location": "madrid-spain",
+        "LocationInformation": {
+            "address": {
+                "city": "Madrid",
+                "countryCode": "ESP",
+                "countryName": "España",
+                "county": "Madrid",
+                "label": "Madrid, Comunidad de Madrid, España",
+                "postalCode": "28014",
+                "state": "Comunidad de Madrid",
+                "stateCode": "MD"
+            },
+            "position": { "lat": 40.41955, "lng": -3.69196 }
+        }
+    },
+    {
+        "location": "barcelona-spain",
+        "LocationInformation": {
+            "address": {
+                "city": "Barcelona",
+                "countryCode": "ESP",
+                "countryName": "Espanya",
+                "county": "Barcelona",
+                "label": "Barcelona, Catalunya, Espanya",
+                "postalCode": "08007",
+                "state": "Catalunya",
+                "stateCode": "CT"
+            },
+            "position": { "lat": 41.38804, "lng": 2.17001 }
+        }
+    },
+    {
+        "location": "rio_de_janeiro-brazil",
+        "LocationInformation": {
+            "address": {
+                "city": "Rio de Janeiro",
+                "countryCode": "BRA",
+                "countryName": "Brasil",
+                "label": "Rio de Janeiro, RJ, Brasil",
+                "postalCode": "20040-009",
+                "state": "Rio de Janeiro",
+                "stateCode": "RJ"
+            },
+            "position": { "lat": -22.91216, "lng": -43.17501 }
+        }
+    },
+    {
+        "location": "recife-brazil",
+        "LocationInformation": {
+            "address": {
+                "city": "Recife",
+                "countryCode": "BRA",
+                "countryName": "Brasil",
+                "label": "Recife, PE, Brasil",
+                "postalCode": "50030-450",
+                "state": "Pernambuco",
+                "stateCode": "PE"
+            },
+            "position": { "lat": -8.05603, "lng": -34.87036 }
+        }
+    },
+    {
+        "location": "leipzig-germany",
+        "LocationInformation": {
+            "address": {
+                "city": "Leipzig",
+                "countryCode": "DEU",
+                "countryName": "Deutschland",
+                "county": "Leipzig (Stadt)",
+                "countyCode": "L",
+                "label": "Leipzig, Sachsen, Deutschland",
+                "postalCode": "04103",
+                "state": "Sachsen",
+                "stateCode": "SN"
+            },
+            "position": { "lat": 51.3452, "lng": 12.38594 }
+        }
+    },
+    {
+        "location": "salem-germany",
+        "LocationInformation": {
+            "address": {
+                "city": "Salem",
+                "countryCode": "DEU",
+                "countryName": "Deutschland",
+                "county": "Bodenseekreis",
+                "countyCode": "FN",
+                "label": "Salem, Baden-Württemberg, Deutschland",
+                "postalCode": "88682",
+                "state": "Baden-Württemberg",
+                "stateCode": "BW"
+            },
+            "position": { "lat": 47.7766, "lng": 9.28538 }
+        }
+    },
+    {
+        "location": "monchengladbach-germany",
+        "LocationInformation": {
+            "address": {
+                "city": "Mönchengladbach",
+                "countryCode": "DEU",
+                "countryName": "Deutschland",
+                "county": "Mönchengladbach",
+                "countyCode": "MG",
+                "label": "Mönchengladbach, Nordrhein-Westfalen, Deutschland",
+                "postalCode": "41061",
+                "state": "Nordrhein-Westfalen",
+                "stateCode": "NW"
+            },
+            "position": { "lat": 51.1955, "lng": 6.44268 }
+        }
+    },
+    {
+        "location": "cuxhaven-germany",
+        "LocationInformation": {
+            "address": {
+                "city": "Cuxhaven",
+                "countryCode": "DEU",
+                "countryName": "Deutschland",
+                "county": "Cuxhaven",
+                "countyCode": "CUX",
+                "label": "Cuxhaven, Niedersachsen, Deutschland",
+                "postalCode": "27472",
+                "state": "Niedersachsen",
+                "stateCode": "NI"
+            },
+            "position": { "lat": 53.8583, "lng": 8.69781 }
+        }
+    },
+    {
+        "location": "skanderborg-denmark",
+        "LocationInformation": {
+            "address": {
+                "city": "Skanderborg",
+                "countryCode": "DNK",
+                "countryName": "Danmark",
+                "county": "Skanderborg",
+                "label": "Skanderborg, Midtjylland, Danmark",
+                "postalCode": "8660",
+                "state": "Midtjylland"
+            },
+            "position": { "lat": 56.03813, "lng": 9.9298 }
+        }
+    },
+    {
+        "location": "amsterdam-netherlands",
+        "LocationInformation": {
+            "address": {
+                "city": "Amsterdam",
+                "countryCode": "NLD",
+                "countryName": "Nederland",
+                "county": "Amsterdam",
+                "label": "Amsterdam, Noord-Holland, Nederland",
+                "postalCode": "1096 BE",
+                "state": "Noord-Holland",
+                "stateCode": "NH"
+            },
+            "position": { "lat": 52.36994, "lng": 4.90788 }
+        }
+    },
+    {
+        "location": "burriana-spain",
+        "LocationInformation": {
+            "address": {
+                "city": "Burriana",
+                "countryCode": "ESP",
+                "countryName": "España",
+                "county": "Castellón",
+                "label": "Burriana, Comunidad Valenciana, España",
+                "postalCode": "12530",
+                "state": "Comunidad Valenciana",
+                "stateCode": "VC"
+            },
+            "position": { "lat": 39.88951, "lng": -0.08511 }
+        }
+    },
+    {
+        "location": "oulu-finland",
+        "LocationInformation": {
+            "address": {
+                "city": "Oulu",
+                "countryCode": "FIN",
+                "countryName": "Suomi",
+                "county": "Pohjois-Pohjanmaa",
+                "label": "Oulu, Pohjois-Suomi, Suomi",
+                "postalCode": "90100",
+                "state": "Pohjois-Suomi",
+                "stateCode": "PS"
+            },
+            "position": { "lat": 65.01035, "lng": 25.47357 }
+        }
+    },
+    {
+        "location": "napoca-romania",
+        "LocationInformation": {
+            "address": {
+                "city": "Cluj-Napoca",
+                "countryCode": "ROU",
+                "countryName": "România",
+                "county": "Cluj",
+                "label": "Cluj-Napoca, România",
+                "postalCode": "400002"
+            },
+            "position": { "lat": 46.7687, "lng": 23.58502 }
+        }
+    },
+    {
+        "location": "riyadh-saudi_arabia",
+        "LocationInformation": {
+            "address": {
+                "city": "الرياض",
+                "countryCode": "SAU",
+                "countryName": "السعودية",
+                "county": "الرياض",
+                "label": "الرياض, السعودية",
+                "postalCode": "12211"
+            },
+            "position": { "lat": 24.68204, "lng": 46.68725 }
+        }
+    },
+    {
+        "location": "canton-usa",
+        "LocationInformation": {
+            "address": {
+                "city": "Canton",
+                "countryCode": "USA",
+                "countryName": "United States",
+                "county": "Stark",
+                "label": "Canton, OH, United States",
+                "postalCode": "44702",
+                "state": "Ohio",
+                "stateCode": "OH"
+            },
+            "position": { "lat": 40.79788, "lng": -81.37194 }
+        }
+    },
+    {
+        "location": "quebec-canada",
+        "LocationInformation": {
+            "address": {
+                "city": "Québec",
+                "countryCode": "CAN",
+                "countryName": "Canada",
+                "county": "Québec",
+                "label": "Québec, QC, Canada",
+                "postalCode": "G1R",
+                "state": "Québec",
+                "stateCode": "QC"
+            },
+            "position": { "lat": 46.81277, "lng": -71.21848 }
+        }
+    },
+    {
+        "location": "las_vegas-usa",
+        "LocationInformation": {
+            "address": {
+                "city": "Las Vegas",
+                "countryCode": "USA",
+                "countryName": "United States",
+                "county": "Clark",
+                "label": "Las Vegas, NV, United States",
+                "postalCode": "89101",
+                "state": "Nevada",
+                "stateCode": "NV"
+            },
+            "position": { "lat": 36.17193, "lng": -115.14001 }
+        }
+    },
+    {
+        "location": "mexico_city-mexico",
+        "LocationInformation": {
+            "address": {
+                "countryCode": "MEX",
+                "countryName": "México",
+                "label": "CMX, México",
+                "state": "Ciudad de México",
+                "stateCode": "CMX"
+            },
+            "position": { "lat": 19.43195, "lng": -99.13315 }
+        }
+    },
+    {
+        "location": "monterrey-mexico",
+        "LocationInformation": {
+            "address": {
+                "city": "Monterrey",
+                "countryCode": "MEX",
+                "countryName": "México",
+                "label": "Monterrey, NL, México",
+                "postalCode": "64018",
+                "state": "Nuevo León",
+                "stateCode": "NL"
+            },
+            "position": { "lat": 25.67093, "lng": -100.30999 }
+        }
+    },
+    {
+        "location": "del_mar-usa",
+        "LocationInformation": {
+            "address": {
+                "city": "Del Mar",
+                "countryCode": "USA",
+                "countryName": "United States",
+                "county": "San Diego",
+                "label": "Del Mar, CA, United States",
+                "postalCode": "92014",
+                "state": "California",
+                "stateCode": "CA"
+            },
+            "position": { "lat": 32.95526, "lng": -117.26362 }
+        }
+    },
+    {
+        "location": "washington-usa",
+        "LocationInformation": {
+            "address": {
+                "city": "Washington",
+                "countryCode": "USA",
+                "countryName": "United States",
+                "county": "District of Columbia",
+                "label": "Washington, DC, United States",
+                "postalCode": "20004",
+                "state": "District of Columbia",
+                "stateCode": "DC"
+            },
+            "position": { "lat": 38.89037, "lng": -77.03196 }
+        }
+    },
+    {
+        "location": "west_melbourne-australia",
+        "LocationInformation": {
+            "address": {
+                "city": "Melbourne",
+                "countryCode": "AUS",
+                "countryName": "Australia",
+                "district": "West Melbourne",
+                "label": "West Melbourne, Melbourne, VIC 3003, Australia",
+                "postalCode": "3003",
+                "state": "Victoria",
+                "stateCode": "VIC"
+            },
+            "position": { "lat": -37.80669, "lng": 144.95035 }
+        }
+    },
+    {
+        "location": "paris-france",
+        "LocationInformation": {
+            "address": {
+                "city": "Paris",
+                "countryCode": "FRA",
+                "countryName": "France",
+                "county": "Paris",
+                "label": "Paris, Île-de-France, France",
+                "postalCode": "75001",
+                "state": "Île-de-France",
+                "stateCode": "IDF"
+            },
+            "position": { "lat": 48.85717, "lng": 2.3414 }
+        }
+    },
+    {
+        "location": "missouri-usa",
+        "LocationInformation": {
+            "address": {
+                "countryCode": "USA",
+                "countryName": "United States",
+                "label": "MO, United States",
+                "state": "Missouri",
+                "stateCode": "MO"
+            },
+            "position": { "lat": 38.57751, "lng": -92.17785 }
+        }
+    },
+    {
+        "location": "chicago-usa",
+        "LocationInformation": {
+            "address": {
+                "city": "Chicago",
+                "countryCode": "USA",
+                "countryName": "United States",
+                "county": "Cook",
+                "label": "Chicago, IL, United States",
+                "postalCode": "60602",
+                "state": "Illinois",
+                "stateCode": "IL"
+            },
+            "position": { "lat": 41.88425, "lng": -87.63245 }
+        }
+    },
+    {
+        "location": "birmingham-uk",
+        "LocationInformation": {
+            "address": {
+                "city": "Birmingham",
+                "countryCode": "GBR",
+                "countryName": "United Kingdom",
+                "county": "West Midlands",
+                "countyCode": "WMD",
+                "label": "Birmingham, England, United Kingdom",
+                "postalCode": "B3 3",
+                "state": "England"
+            },
+            "position": { "lat": 52.47891, "lng": -1.90592 }
+        }
+    },
+    {
+        "location": "sydney-australia",
+        "LocationInformation": {
+            "address": {
+                "city": "Sydney",
+                "countryCode": "AUS",
+                "countryName": "Australia",
+                "label": "Sydney, NSW 2000, Australia",
+                "postalCode": "2000",
+                "state": "New South Wales",
+                "stateCode": "NSW"
+            },
+            "position": { "lat": -33.86973, "lng": 151.20825 }
+        }
+    },
+    {
+        "location": "madison-usa",
+        "LocationInformation": {
+            "address": {
+                "city": "Madison",
+                "countryCode": "USA",
+                "countryName": "United States",
+                "county": "Dane",
+                "label": "Madison, WI, United States",
+                "postalCode": "53703",
+                "state": "Wisconsin",
+                "stateCode": "WI"
+            },
+            "position": { "lat": 43.07313, "lng": -89.38644 }
+        }
+    },
+    {
+        "location": "toronto-canada",
+        "LocationInformation": {
+            "address": {
+                "city": "Toronto",
+                "countryCode": "CAN",
+                "countryName": "Canada",
+                "county": "Toronto",
+                "label": "Toronto, ON, Canada",
+                "postalCode": "M5H",
+                "state": "Ontario",
+                "stateCode": "ON"
+            },
+            "position": { "lat": 43.64869, "lng": -79.38544 }
+        }
+    },
+    {
+        "location": "cleveland-usa",
+        "LocationInformation": {
+            "address": {
+                "city": "Cleveland",
+                "countryCode": "USA",
+                "countryName": "United States",
+                "county": "Cuyahoga",
+                "label": "Cleveland, OH, United States",
+                "postalCode": "44114",
+                "state": "Ohio",
+                "stateCode": "OH"
+            },
+            "position": { "lat": 41.50473, "lng": -81.69074 }
+        }
+    },
+    {
+        "location": "boston-usa",
+        "LocationInformation": {
+            "address": {
+                "city": "Boston",
+                "countryCode": "USA",
+                "countryName": "United States",
+                "county": "Suffolk",
+                "label": "Boston, MA, United States",
+                "postalCode": "02109",
+                "state": "Massachusetts",
+                "stateCode": "MA"
+            },
+            "position": { "lat": 42.35866, "lng": -71.05674 }
+        }
+    },
+    {
+        "location": "utah-usa",
+        "LocationInformation": {
+            "address": {
+                "countryCode": "USA",
+                "countryName": "United States",
+                "label": "UT, United States",
+                "state": "Utah",
+                "stateCode": "UT"
+            },
+            "position": { "lat": 40.76031, "lng": -111.88822 }
+        }
+    },
+    {
+        "location": "glasgow-uk",
+        "LocationInformation": {
+            "address": {
+                "city": "Glasgow",
+                "countryCode": "GBR",
+                "countryName": "United Kingdom",
+                "county": "Lanarkshire",
+                "countyCode": "LKS",
+                "label": "Glasgow, Scotland, United Kingdom",
+                "postalCode": "G1 1",
+                "state": "Scotland"
+            },
+            "position": { "lat": 55.85783, "lng": -4.24251 }
+        }
+    },
+    {
+        "location": "dublin-ireland",
+        "LocationInformation": {
+            "address": {
+                "city": "Dublin",
+                "countryCode": "IRL",
+                "countryName": "Ireland",
+                "county": "County Dublin",
+                "countyCode": "D",
+                "label": "Dublin, Ireland",
+                "postalCode": "1"
+            },
+            "position": { "lat": 53.34807, "lng": -6.24827 }
+        }
+    },
+    {
+        "location": "cardiff-uk",
+        "LocationInformation": {
+            "address": {
+                "city": "Cardiff",
+                "countryCode": "GBR",
+                "countryName": "United Kingdom",
+                "county": "South Glamorgan",
+                "countyCode": "GNS",
+                "label": "Cardiff, Wales, United Kingdom",
+                "postalCode": "CF10 1",
+                "state": "Wales"
+            },
+            "position": { "lat": 51.48127, "lng": -3.18072 }
+        }
+    },
+    {
+        "location": "aberdeen-uk",
+        "LocationInformation": {
+            "address": {
+                "city": "Aberdeen",
+                "countryCode": "GBR",
+                "countryName": "United Kingdom",
+                "county": "Aberdeenshire",
+                "countyCode": "ABD",
+                "label": "Aberdeen, Scotland, United Kingdom",
+                "postalCode": "AB11 6",
+                "state": "Scotland"
+            },
+            "position": { "lat": 57.14555, "lng": -2.10249 }
+        }
+    },
+    {
+        "location": "warsaw-poland",
+        "LocationInformation": {
+            "address": {
+                "city": "Warszawa",
+                "countryCode": "POL",
+                "countryName": "Polska",
+                "county": "Warszawa",
+                "label": "Warszawa, Woj. Mazowieckie, Polska",
+                "postalCode": "00-941",
+                "state": "Woj. Mazowieckie"
+            },
+            "position": { "lat": 52.2356, "lng": 21.01037 }
+        }
+    },
+    {
+        "location": "milan-italy",
+        "LocationInformation": {
+            "address": {
+                "city": "Milano",
+                "countryCode": "ITA",
+                "countryName": "Italia",
+                "county": "Milano",
+                "countyCode": "MI",
+                "label": "Milano, Lombardia, Italia",
+                "postalCode": "20121",
+                "state": "Lombardia"
+            },
+            "position": { "lat": 45.46796, "lng": 9.18178 }
+        }
+    },
+    {
+        "location": "michigan-usa",
+        "LocationInformation": {
+            "address": {
+                "countryCode": "USA",
+                "countryName": "United States",
+                "label": "MI, United States",
+                "state": "Michigan",
+                "stateCode": "MI"
+            },
+            "position": { "lat": 42.73194, "lng": -84.55226 }
+        }
+    },
+    {
+        "location": "new_hampshire-usa",
+        "LocationInformation": {
+            "address": {
+                "countryCode": "USA",
+                "countryName": "United States",
+                "label": "NH, United States",
+                "state": "New Hampshire",
+                "stateCode": "NH"
+            },
+            "position": { "lat": 43.20725, "lng": -71.53661 }
+        }
+    },
+    {
+        "location": "sochaux-france",
+        "LocationInformation": {
+            "address": {
+                "city": "Sochaux",
+                "countryCode": "FRA",
+                "countryName": "France",
+                "county": "Doubs",
+                "label": "Sochaux, Bourgogne-Franche-Comté, France",
+                "postalCode": "25600",
+                "state": "Bourgogne-Franche-Comté",
+                "stateCode": "BFC"
+            },
+            "position": { "lat": 47.51321, "lng": 6.82982 }
+        }
+    },
+    {
+        "location": "eindhoven-netherlands",
+        "LocationInformation": {
+            "address": {
+                "city": "Eindhoven",
+                "countryCode": "NLD",
+                "countryName": "Nederland",
+                "county": "Eindhoven",
+                "label": "Eindhoven, Noord-Brabant, Nederland",
+                "postalCode": "5611 CB",
+                "state": "Noord-Brabant",
+                "stateCode": "NB"
+            },
+            "position": { "lat": 51.43597, "lng": 5.48533 }
+        }
+    },
+    {
+        "location": "oslo-norway",
+        "LocationInformation": {
+            "address": {
+                "city": "Oslo",
+                "countryCode": "NOR",
+                "countryName": "Norge",
+                "county": "Oslo",
+                "label": "Oslo, Norge",
+                "postalCode": "0155",
+                "state": "Oslo"
+            },
+            "position": { "lat": 59.91234, "lng": 10.75 }
+        }
+    },
+    {
+        "location": "colorado-usa",
+        "LocationInformation": {
+            "address": {
+                "countryCode": "USA",
+                "countryName": "United States",
+                "label": "CO, United States",
+                "state": "Colorado",
+                "stateCode": "CO"
+            },
+            "position": { "lat": 39.74001, "lng": -104.99203 }
+        }
+    },
+    {
+        "location": "jakarta-indonesia",
+        "LocationInformation": {
+            "address": {
+                "city": "Jakarta",
+                "countryCode": "IDN",
+                "countryName": "Indonesia",
+                "county": "DKI Jakarta",
+                "countyCode": "ID-JK",
+                "label": "Jakarta, JABODETABEK, Indonesia",
+                "postalCode": "10110",
+                "state": "JABODETABEK"
+            },
+            "position": { "lat": -6.17148, "lng": 106.82649 }
+        }
+    },
+    {
+        "location": "huizhou-china",
+        "LocationInformation": {
+            "address": {
+                "city": "Fuzhou",
+                "countryCode": "CHN",
+                "countryName": "China",
+                "label": "Fuzhou, China"
+            },
+            "position": { "lat": 26.07877, "lng": 119.29688 }
+        }
+    },
+    {
+        "location": "changzhou-china",
+        "LocationInformation": {
+            "address": {
+                "city": "Hangzhou",
+                "countryCode": "CHN",
+                "countryName": "China",
+                "label": "Hangzhou, China"
+            },
+            "position": { "lat": 30.27241, "lng": 120.20593 }
+        }
+    },
+    {
+        "location": "hong_kong-china",
+        "LocationInformation": {
+            "address": {
+                "city": "Berlin",
+                "countryCode": "DEU",
+                "countryName": "Deutschland",
+                "county": "Berlin",
+                "countyCode": "B",
+                "district": "Friedrichsfelde",
+                "houseNumber": "38",
+                "label": "Thanh Nam Restaurant, Alfred-Kowalke-Straße 38, 10315 Berlin, Deutschland",
+                "postalCode": "10315",
+                "state": "Berlin",
+                "stateCode": "BE",
+                "street": "Alfred-Kowalke-Straße"
+            },
+            "position": { "lat": 52.50585, "lng": 13.51644 }
+        }
+    },
+    {
+        "location": "sanya-china",
+        "LocationInformation": {
+            "address": {
+                "city": "Berlin",
+                "countryCode": "DEU",
+                "countryName": "Deutschland",
+                "county": "Berlin",
+                "countyCode": "B",
+                "district": "Mitte",
+                "houseNumber": "72",
+                "label": "India Club, Behrenstraße 72, 10117 Berlin, Deutschland",
+                "postalCode": "10117",
+                "state": "Berlin",
+                "stateCode": "BE",
+                "street": "Behrenstraße"
+            },
+            "position": { "lat": 52.51494, "lng": 13.37952 }
+        }
+    },
+    {
+        "location": "aalborg-denmark",
+        "LocationInformation": {
+            "address": {
+                "city": "Aalborg",
+                "countryCode": "DNK",
+                "countryName": "Danmark",
+                "county": "Aalborg",
+                "label": "Aalborg, Nordjylland, Danmark",
+                "postalCode": "9000",
+                "state": "Nordjylland"
+            },
+            "position": { "lat": 57.04936, "lng": 9.91629 }
+        }
+    },
+    {
+        "location": "seattle-usa",
+        "LocationInformation": {
+            "address": {
+                "city": "Seattle",
+                "countryCode": "USA",
+                "countryName": "United States",
+                "county": "King",
+                "label": "Seattle, WA, United States",
+                "postalCode": "98104",
+                "state": "Washington",
+                "stateCode": "WA"
+            },
+            "position": { "lat": 47.60357, "lng": -122.32945 }
+        }
+    },
+    {
+        "location": "omaha-usa",
+        "LocationInformation": {
+            "address": {
+                "city": "Omaha",
+                "countryCode": "USA",
+                "countryName": "United States",
+                "county": "Douglas",
+                "label": "Omaha, NE, United States",
+                "postalCode": "68102",
+                "state": "Nebraska",
+                "stateCode": "NE"
+            },
+            "position": { "lat": 41.26068, "lng": -95.94026 }
+        }
+    },
+    {
+        "location": "kansas_city-usa",
+        "LocationInformation": {
+            "address": {
+                "city": "Kansas City",
+                "countryCode": "USA",
+                "countryName": "United States",
+                "county": "Jackson",
+                "label": "Kansas City, MO, United States",
+                "postalCode": "64105",
+                "state": "Missouri",
+                "stateCode": "MO"
+            },
+            "position": { "lat": 39.10344, "lng": -94.58311 }
+        }
+    },
+    {
+        "location": "st_louis-usa",
+        "LocationInformation": {
+            "address": {
+                "city": "St Louis",
+                "countryCode": "USA",
+                "countryName": "United States",
+                "county": "St Louis (City)",
+                "label": "St Louis, MO, United States",
+                "postalCode": "63103",
+                "state": "Missouri",
+                "stateCode": "MO"
+            },
+            "position": { "lat": 38.62775, "lng": -90.19956 }
+        }
+    },
+    {
+        "location": "indianapolis-usa",
+        "LocationInformation": {
+            "address": {
+                "city": "Indianapolis",
+                "countryCode": "USA",
+                "countryName": "United States",
+                "county": "Marion",
+                "label": "Indianapolis, IN, United States",
+                "postalCode": "46204",
+                "state": "Indiana",
+                "stateCode": "IN"
+            },
+            "position": { "lat": 39.76691, "lng": -86.15012 }
+        }
+    },
+    {
+        "location": "rosemont-usa",
+        "LocationInformation": {
+            "address": {
+                "city": "Rosemont",
+                "countryCode": "USA",
+                "countryName": "United States",
+                "county": "Hunterdon",
+                "label": "Rosemont, NJ, United States",
+                "postalCode": "08556",
+                "state": "New Jersey",
+                "stateCode": "NJ"
+            },
+            "position": { "lat": 40.43544, "lng": -74.97657 }
+        }
+    },
+    {
+        "location": "grand_rapids-usa",
+        "LocationInformation": {
+            "address": {
+                "city": "Grand Rapids",
+                "countryCode": "USA",
+                "countryName": "United States",
+                "county": "Kent",
+                "label": "Grand Rapids, MI, United States",
+                "postalCode": "49503",
+                "state": "Michigan",
+                "stateCode": "MI"
+            },
+            "position": { "lat": 42.96642, "lng": -85.67195 }
+        }
+    },
+    {
+        "location": "toronto-usa",
+        "LocationInformation": {
+            "address": {
+                "city": "Toronto",
+                "countryCode": "USA",
+                "countryName": "United States",
+                "county": "Jefferson",
+                "label": "Toronto, OH, United States",
+                "postalCode": "43964",
+                "state": "Ohio",
+                "stateCode": "OH"
+            },
+            "position": { "lat": 40.46095, "lng": -80.60644 }
+        }
+    },
+    {
+        "location": "montreal-usa",
+        "LocationInformation": {
+            "address": {
+                "city": "Montreal",
+                "countryCode": "USA",
+                "countryName": "United States",
+                "county": "Camden",
+                "label": "Montreal, MO, United States",
+                "postalCode": "65591",
+                "state": "Missouri",
+                "stateCode": "MO"
+            },
+            "position": { "lat": 37.9688, "lng": -92.59245 }
+        }
+    },
+    {
+        "location": "newark-usa",
+        "LocationInformation": {
+            "address": {
+                "city": "Newark",
+                "countryCode": "USA",
+                "countryName": "United States",
+                "county": "Essex",
+                "label": "Newark, NJ, United States",
+                "postalCode": "07102",
+                "state": "New Jersey",
+                "stateCode": "NJ"
+            },
+            "position": { "lat": 40.73197, "lng": -74.17421 }
+        }
+    },
+    {
+        "location": "uniondale-usa",
+        "LocationInformation": {
+            "address": {
+                "city": "Uniondale",
+                "countryCode": "USA",
+                "countryName": "United States",
+                "county": "Nassau",
+                "label": "Uniondale, NY, United States",
+                "postalCode": "11553",
+                "state": "New York",
+                "stateCode": "NY"
+            },
+            "position": { "lat": 40.71795, "lng": -73.59349 }
+        }
+    },
+    {
+        "location": "philadelphia-usa",
+        "LocationInformation": {
+            "address": {
+                "city": "Philadelphia",
+                "countryCode": "USA",
+                "countryName": "United States",
+                "county": "Philadelphia",
+                "label": "Philadelphia, PA, United States",
+                "postalCode": "19107",
+                "state": "Pennsylvania",
+                "stateCode": "PA"
+            },
+            "position": { "lat": 39.95222, "lng": -75.16218 }
+        }
+    },
+    {
+        "location": "hershey-usa",
+        "LocationInformation": {
+            "address": {
+                "city": "Hershey",
+                "countryCode": "USA",
+                "countryName": "United States",
+                "county": "Dauphin",
+                "label": "Hershey, PA, United States",
+                "postalCode": "17033",
+                "state": "Pennsylvania",
+                "stateCode": "PA"
+            },
+            "position": { "lat": 40.28538, "lng": -76.65091 }
+        }
+    },
+    {
+        "location": "pittsburgh-usa",
+        "LocationInformation": {
+            "address": {
+                "city": "Pittsburgh",
+                "countryCode": "USA",
+                "countryName": "United States",
+                "county": "Allegheny",
+                "label": "Pittsburgh, PA, United States",
+                "postalCode": "15219",
+                "state": "Pennsylvania",
+                "stateCode": "PA"
+            },
+            "position": { "lat": 40.43851, "lng": -79.99734 }
+        }
+    },
+    {
+        "location": "columbia-usa",
+        "LocationInformation": {
+            "address": {
+                "city": "Columbia",
+                "countryCode": "USA",
+                "countryName": "United States",
+                "county": "Richland",
+                "label": "Columbia, SC, United States",
+                "postalCode": "29201",
+                "state": "South Carolina",
+                "stateCode": "SC"
+            },
+            "position": { "lat": 33.99882, "lng": -81.04537 }
+        }
+    },
+    {
+        "location": "santiago-chile",
+        "LocationInformation": {
+            "address": {
+                "countryCode": "CHL",
+                "countryName": "Chile",
+                "county": "Santiago",
+                "label": "Santiago, Región Metropolitana de Santiago, Chile",
+                "state": "Región Metropolitana de Santiago",
+                "stateCode": "RM"
+            },
+            "position": { "lat": -33.43723, "lng": -70.65003 }
+        }
+    },
+    {
+        "location": "houston-usa",
+        "LocationInformation": {
+            "address": {
+                "city": "Houston",
+                "countryCode": "USA",
+                "countryName": "United States",
+                "county": "Harris",
+                "label": "Houston, TX, United States",
+                "postalCode": "77002",
+                "state": "Texas",
+                "stateCode": "TX"
+            },
+            "position": { "lat": 29.76078, "lng": -95.36952 }
+        }
+    },
+    {
+        "location": "atlanta-usa",
+        "LocationInformation": {
+            "address": {
+                "city": "Atlanta",
+                "countryCode": "USA",
+                "countryName": "United States",
+                "county": "Fulton",
+                "label": "Atlanta, GA, United States",
+                "postalCode": "30303",
+                "state": "Georgia",
+                "stateCode": "GA"
+            },
+            "position": { "lat": 33.74831, "lng": -84.39111 }
+        }
+    },
+    {
+        "location": "new_orleans-usa",
+        "LocationInformation": {
+            "address": {
+                "city": "New Orleans",
+                "countryCode": "USA",
+                "countryName": "United States",
+                "county": "Orleans",
+                "label": "New Orleans, LA, United States",
+                "postalCode": "70112",
+                "state": "Louisiana",
+                "stateCode": "LA"
+            },
+            "position": { "lat": 29.9537, "lng": -90.07775 }
+        }
+    },
+    {
+        "location": "frauenfeld-switzerland",
+        "LocationInformation": {
+            "address": {
+                "city": "Frauenfeld",
+                "countryCode": "CHE",
+                "countryName": "Schweiz",
+                "county": "Frauenfeld",
+                "label": "Frauenfeld, Thurgau, Schweiz",
+                "postalCode": "8500",
+                "state": "Thurgau",
+                "stateCode": "TG"
+            },
+            "position": { "lat": 47.55549, "lng": 8.89723 }
+        }
+    },
+    {
+        "location": "turku-finland",
+        "LocationInformation": {
+            "address": {
+                "city": "Turku",
+                "countryCode": "FIN",
+                "countryName": "Suomi",
+                "county": "Varsinais-Suomi",
+                "label": "Turku, Lounais-Suomi, Suomi",
+                "postalCode": "20100",
+                "state": "Lounais-Suomi",
+                "stateCode": "LS"
+            },
+            "position": { "lat": 60.4528, "lng": 22.25155 }
+        }
+    },
+    {
+        "location": "brooklyn-usa",
+        "LocationInformation": {
+            "address": {
+                "city": "Brooklyn",
+                "countryCode": "USA",
+                "countryName": "United States",
+                "county": "Kings",
+                "label": "Brooklyn, NY, United States",
+                "postalCode": "11201",
+                "state": "New York",
+                "stateCode": "NY"
+            },
+            "position": { "lat": 40.69245, "lng": -73.99036 }
+        }
+    },
+    {
+        "location": "montreal-canada",
+        "LocationInformation": {
+            "address": {
+                "city": "Montréal",
+                "countryCode": "CAN",
+                "countryName": "Canada",
+                "county": "Montréal",
+                "label": "Montréal, QC, Canada",
+                "postalCode": "H2L",
+                "state": "Québec",
+                "stateCode": "QC"
+            },
+            "position": { "lat": 45.5124, "lng": -73.55469 }
+        }
+    },
+    {
+        "location": "imola-italy",
+        "LocationInformation": {
+            "address": {
+                "city": "Imola",
+                "countryCode": "ITA",
+                "countryName": "Italia",
+                "county": "Bologna",
+                "countyCode": "BO",
+                "label": "Imola, Emilia Romagna, Italia",
+                "postalCode": "40026",
+                "state": "Emilia Romagna"
+            },
+            "position": { "lat": 44.35787, "lng": 11.71101 }
+        }
+    },
+    {
+        "location": "vienna-austria",
+        "LocationInformation": {
+            "address": {
+                "city": "Wien",
+                "countryCode": "AUT",
+                "countryName": "Österreich",
+                "county": "Wien",
+                "countyCode": "W",
+                "label": "Wien, Österreich",
+                "postalCode": "1010",
+                "state": "Wien",
+                "stateCode": "W"
+            },
+            "position": { "lat": 48.20263, "lng": 16.36842 }
+        }
+    },
+    {
+        "location": "krakow-poland",
+        "LocationInformation": {
+            "address": {
+                "city": "Kraków",
+                "countryCode": "POL",
+                "countryName": "Polska",
+                "county": "Kraków",
+                "label": "Kraków, Woj. Małopolskie, Polska",
+                "postalCode": "31-109",
+                "state": "Woj. Małopolskie"
+            },
+            "position": { "lat": 50.06045, "lng": 19.93242 }
+        }
+    },
+    {
+        "location": "zurich-switzerland",
+        "LocationInformation": {
+            "address": {
+                "city": "Zürich",
+                "countryCode": "CHE",
+                "countryName": "Schweiz",
+                "county": "Zürich",
+                "label": "Zürich, Schweiz",
+                "postalCode": "8001",
+                "state": "Zürich",
+                "stateCode": "ZH"
+            },
+            "position": { "lat": 47.377, "lng": 8.53977 }
+        }
+    },
+    {
+        "location": "amityville-usa",
+        "LocationInformation": {
+            "address": {
+                "city": "Amityville",
+                "countryCode": "USA",
+                "countryName": "United States",
+                "county": "Suffolk",
+                "label": "Amityville, NY, United States",
+                "postalCode": "11701",
+                "state": "New York",
+                "stateCode": "NY"
+            },
+            "position": { "lat": 40.67882, "lng": -73.41932 }
+        }
+    },
+    {
+        "location": "minneapolis-usa",
+        "LocationInformation": {
+            "address": {
+                "city": "Minneapolis",
+                "countryCode": "USA",
+                "countryName": "United States",
+                "county": "Hennepin",
+                "label": "Minneapolis, MN, United States",
+                "postalCode": "55415",
+                "state": "Minnesota",
+                "stateCode": "MN"
+            },
+            "position": { "lat": 44.97902, "lng": -93.26494 }
+        }
+    },
+    {
+        "location": "detroit-usa",
+        "LocationInformation": {
+            "address": {
+                "city": "Detroit",
+                "countryCode": "USA",
+                "countryName": "United States",
+                "county": "Wayne",
+                "label": "Detroit, MI, United States",
+                "postalCode": "48226",
+                "state": "Michigan",
+                "stateCode": "MI"
+            },
+            "position": { "lat": 42.33168, "lng": -83.048 }
+        }
+    },
+    {
+        "location": "oakland-usa",
+        "LocationInformation": {
+            "address": {
+                "city": "Oakland",
+                "countryCode": "USA",
+                "countryName": "United States",
+                "county": "Alameda",
+                "label": "Oakland, CA, United States",
+                "postalCode": "94612",
+                "state": "California",
+                "stateCode": "CA"
+            },
+            "position": { "lat": 37.80508, "lng": -122.27307 }
+        }
+    },
+    {
+        "location": "charlotte-usa",
+        "LocationInformation": {
+            "address": {
+                "city": "Charlotte",
+                "countryCode": "USA",
+                "countryName": "United States",
+                "county": "Mecklenburg",
+                "label": "Charlotte, NC, United States",
+                "postalCode": "28202",
+                "state": "North Carolina",
+                "stateCode": "NC"
+            },
+            "position": { "lat": 35.22286, "lng": -80.83796 }
+        }
+    },
+    {
+        "location": "inglewood-usa",
+        "LocationInformation": {
+            "address": {
+                "city": "Inglewood",
+                "countryCode": "USA",
+                "countryName": "United States",
+                "county": "Los Angeles",
+                "label": "Inglewood, CA, United States",
+                "postalCode": "90301",
+                "state": "California",
+                "stateCode": "CA"
+            },
+            "position": { "lat": 33.96178, "lng": -118.35653 }
+        }
+    },
+    {
+        "location": "windsor-canada",
+        "LocationInformation": {
+            "address": {
+                "city": "Windsor",
+                "countryCode": "CAN",
+                "countryName": "Canada",
+                "county": "Essex",
+                "label": "Windsor, ON, Canada",
+                "postalCode": "N9A",
+                "state": "Ontario",
+                "stateCode": "ON"
+            },
+            "position": { "lat": 42.31785, "lng": -83.03387 }
+        }
+    },
+    {
+        "location": "cincinnati-usa",
+        "LocationInformation": {
+            "address": {
+                "city": "Cincinnati",
+                "countryCode": "USA",
+                "countryName": "United States",
+                "county": "Hamilton",
+                "label": "Cincinnati, OH, United States",
+                "postalCode": "45202",
+                "state": "Ohio",
+                "stateCode": "OH"
+            },
+            "position": { "lat": 39.10713, "lng": -84.50413 }
+        }
+    },
+    {
+        "location": "anaheim-usa",
+        "LocationInformation": {
+            "address": {
+                "city": "Anaheim",
+                "countryCode": "USA",
+                "countryName": "United States",
+                "county": "Orange",
+                "label": "Anaheim, CA, United States",
+                "postalCode": "92805",
+                "state": "California",
+                "stateCode": "CA"
+            },
+            "position": { "lat": 33.83286, "lng": -117.91524 }
+        }
+    },
+    {
+        "location": "manila-philippines",
+        "LocationInformation": {
+            "address": {
+                "city": "Manila",
+                "countryCode": "PHL",
+                "countryName": "Philippines",
+                "county": "First District NCR",
+                "label": "Manila, National Capital Region, Philippines",
+                "postalCode": "1015",
+                "state": "National Capital Region",
+                "stateCode": "NCR"
+            },
+            "position": { "lat": 14.60487, "lng": 120.98627 }
+        }
+    },
+    {
+        "location": "brisbane-australia",
+        "LocationInformation": {
+            "address": {
+                "city": "Brisbane",
+                "countryCode": "AUS",
+                "countryName": "Australia",
+                "label": "Brisbane, QLD 4000, Australia",
+                "postalCode": "4000",
+                "state": "Queensland",
+                "stateCode": "QLD"
+            },
+            "position": { "lat": -27.46844, "lng": 153.02334 }
+        }
+    },
+    {
+        "location": "lima-peru",
+        "LocationInformation": {
+            "address": {
+                "city": "Lima",
+                "countryCode": "PER",
+                "countryName": "Perú",
+                "county": "Lima",
+                "label": "Lima, Perú",
+                "postalCode": "15001",
+                "state": "Lima",
+                "stateCode": "LM"
+            },
+            "position": { "lat": -12.05613, "lng": -77.02679 }
+        }
+    },
+    {
+        "location": "groningen-netherlands",
+        "LocationInformation": {
+            "address": {
+                "city": "Groningen",
+                "countryCode": "NLD",
+                "countryName": "Nederland",
+                "county": "Groningen",
+                "label": "Groningen, Nederland",
+                "postalCode": "9711",
+                "state": "Groningen",
+                "stateCode": "GR"
+            },
+            "position": { "lat": 53.21687, "lng": 6.57393 }
+        }
+    },
+    {
+        "location": "antwerp-belgium",
+        "LocationInformation": {
+            "address": {
+                "city": "Antwerpen",
+                "countryCode": "BEL",
+                "countryName": "België",
+                "county": "Antwerpen",
+                "label": "Antwerpen, Vlaanderen, België",
+                "postalCode": "2000",
+                "state": "Vlaanderen",
+                "stateCode": "VLG"
+            },
+            "position": { "lat": 51.22212, "lng": 4.39769 }
+        }
+    },
+    {
+        "location": "pico_rivera-usa",
+        "LocationInformation": {
+            "address": {
+                "city": "Pico Rivera",
+                "countryCode": "USA",
+                "countryName": "United States",
+                "county": "Los Angeles",
+                "label": "Pico Rivera, CA, United States",
+                "postalCode": "90660",
+                "state": "California",
+                "stateCode": "CA"
+            },
+            "position": { "lat": 33.98242, "lng": -118.08799 }
+        }
+    },
+    {
+        "location": "berwyn-usa",
+        "LocationInformation": {
+            "address": {
+                "city": "Berwyn",
+                "countryCode": "USA",
+                "countryName": "United States",
+                "county": "Cook",
+                "label": "Berwyn, IL, United States",
+                "postalCode": "60402",
+                "state": "Illinois",
+                "stateCode": "IL"
+            },
+            "position": { "lat": 41.84329, "lng": -87.7908 }
+        }
+    },
+    {
+        "location": "dallas-usa",
+        "LocationInformation": {
+            "address": {
+                "city": "Dallas",
+                "countryCode": "USA",
+                "countryName": "United States",
+                "county": "Dallas",
+                "label": "Dallas, TX, United States",
+                "postalCode": "75201",
+                "state": "Texas",
+                "stateCode": "TX"
+            },
+            "position": { "lat": 32.77822, "lng": -96.79512 }
+        }
+    },
+    {
+        "location": "brixton-uk",
+        "LocationInformation": {
+            "address": {
+                "city": "London",
+                "countryCode": "GBR",
+                "countryName": "United Kingdom",
+                "county": "London",
+                "countyCode": "LDN",
+                "district": "Brixton",
+                "label": "Brixton, London, England, United Kingdom",
+                "postalCode": "SW2 1",
+                "state": "England"
+            },
+            "position": { "lat": 51.4525, "lng": -0.12238 }
+        }
+    },
+    {
+        "location": "rotselaar-belgium",
+        "LocationInformation": {
+            "address": {
+                "city": "Rotselaar",
+                "countryCode": "BEL",
+                "countryName": "België",
+                "county": "Vlaams Brabant",
+                "label": "Rotselaar, Vlaanderen, België",
+                "postalCode": "3110",
+                "state": "Vlaanderen",
+                "stateCode": "VLG"
+            },
+            "position": { "lat": 50.95114, "lng": 4.71042 }
+        }
+    },
+    {
+        "location": "alabama-usa",
+        "LocationInformation": {
+            "address": {
+                "countryCode": "USA",
+                "countryName": "United States",
+                "label": "AL, United States",
+                "state": "Alabama",
+                "stateCode": "AL"
+            },
+            "position": { "lat": 32.38015, "lng": -86.30006 }
+        }
+    },
+    {
+        "location": "massachusetts-usa",
+        "LocationInformation": {
+            "address": {
+                "countryCode": "USA",
+                "countryName": "United States",
+                "label": "MA, United States",
+                "state": "Massachusetts",
+                "stateCode": "MA"
+            },
+            "position": { "lat": 42.35866, "lng": -71.05675 }
+        }
+    },
+    {
+        "location": "athens-greece",
+        "LocationInformation": {
+            "address": {
+                "city": "Αθήνα",
+                "countryCode": "GRC",
+                "countryName": "Ελλάδα",
+                "county": "Αττική",
+                "label": "Αθήνα, Αττική, Ελλάδα",
+                "postalCode": "106 71",
+                "state": "Αττική"
+            },
+            "position": { "lat": 37.97614, "lng": 23.7364 }
+        }
+    },
+    {
+        "location": "florence-italy",
+        "LocationInformation": {
+            "address": {
+                "city": "Firenze",
+                "countryCode": "ITA",
+                "countryName": "Italia",
+                "county": "Firenze",
+                "countyCode": "FI",
+                "label": "Firenze, Toscana, Italia",
+                "postalCode": "50129",
+                "state": "Toscana"
+            },
+            "position": { "lat": 43.78237, "lng": 11.25501 }
+        }
+    },
+    {
+        "location": "landgraaf-netherlands",
+        "LocationInformation": {
+            "address": {
+                "city": "Landgraaf",
+                "countryCode": "NLD",
+                "countryName": "Nederland",
+                "county": "Landgraaf",
+                "label": "Landgraaf, Limburg, Nederland",
+                "postalCode": "6373 XW",
+                "state": "Limburg",
+                "stateCode": "LI"
+            },
+            "position": { "lat": 50.90288, "lng": 6.02701 }
+        }
+    },
+    {
+        "location": "burswood-australia",
+        "LocationInformation": {
+            "address": {
+                "city": "Perth",
+                "countryCode": "AUS",
+                "countryName": "Australia",
+                "district": "Burswood",
+                "label": "Burswood, Perth, WA 6100, Australia",
+                "postalCode": "6100",
+                "state": "Western Australia",
+                "stateCode": "WA"
+            },
+            "position": { "lat": -31.96028, "lng": 115.89924 }
+        }
+    },
+    {
+        "location": "wellington-new_zealand",
+        "LocationInformation": {
+            "address": {
+                "city": "Wellington",
+                "countryCode": "NZL",
+                "countryName": "New Zealand",
+                "county": "Wellington City",
+                "label": "Wellington, New Zealand",
+                "postalCode": "6011",
+                "state": "Wellington"
+            },
+            "position": { "lat": -41.28949, "lng": 174.77686 }
+        }
+    },
+    {
+        "location": "seville-spain",
+        "LocationInformation": {
+            "address": {
+                "city": "Sevilla",
+                "countryCode": "ESP",
+                "countryName": "España",
+                "county": "Sevilla",
+                "label": "Sevilla, Andalucía, España",
+                "postalCode": "41001",
+                "state": "Andalucía",
+                "stateCode": "AN"
+            },
+            "position": { "lat": 37.38788, "lng": -6.00196 }
+        }
+    },
+    {
+        "location": "bangkok-thailand",
+        "LocationInformation": {
+            "address": {
+                "city": "กรุงเทพมหานคร",
+                "countryCode": "THA",
+                "countryName": "ประเทศไทย",
+                "county": "กรุงเทพมหานคร",
+                "label": "กรุงเทพมหานคร, ประเทศไทย",
+                "postalCode": "10200"
+            },
+            "position": { "lat": 13.75336, "lng": 100.50483 }
+        }
+    },
+    {
+        "location": "taipei-taiwan",
+        "LocationInformation": {
+            "address": {
+                "city": "台北市",
+                "countryCode": "TWN",
+                "countryName": "台灣",
+                "county": "台北市",
+                "label": "台灣110台北市",
+                "postalCode": "110"
+            },
+            "position": { "lat": 25.03737, "lng": 121.56355 }
+        }
+    },
+    {
+        "location": "seoul-south_korea",
+        "LocationInformation": {
+            "address": {
+                "city": "Seoul",
+                "countryCode": "KOR",
+                "countryName": "South Korea",
+                "county": "South Korea",
+                "label": "Seoul, South Korea, South Korea"
+            },
+            "position": { "lat": 37.55886, "lng": 126.99989 }
+        }
+    },
+    {
+        "location": "munich-germany",
+        "LocationInformation": {
+            "address": {
+                "city": "München",
+                "countryCode": "DEU",
+                "countryName": "Deutschland",
+                "county": "München (Stadt)",
+                "countyCode": "M",
+                "label": "München, Bayern, Deutschland",
+                "postalCode": "80331",
+                "state": "Bayern",
+                "stateCode": "BY"
+            },
+            "position": { "lat": 48.13641, "lng": 11.57754 }
+        }
+    },
+    {
+        "location": "mannheim-germany",
+        "LocationInformation": {
+            "address": {
+                "city": "Mannheim",
+                "countryCode": "DEU",
+                "countryName": "Deutschland",
+                "county": "Mannheim",
+                "countyCode": "MA",
+                "label": "Mannheim, Baden-Württemberg, Deutschland",
+                "postalCode": "68161",
+                "state": "Baden-Württemberg",
+                "stateCode": "BW"
+            },
+            "position": { "lat": 49.48443, "lng": 8.46274 }
+        }
+    },
+    {
+        "location": "san_francisco-usa",
+        "LocationInformation": {
+            "address": {
+                "city": "San Francisco",
+                "countryCode": "USA",
+                "countryName": "United States",
+                "county": "San Francisco",
+                "label": "San Francisco, CA, United States",
+                "postalCode": "94102",
+                "state": "California",
+                "stateCode": "CA"
+            },
+            "position": { "lat": 37.77712, "lng": -122.41966 }
+        }
+    },
+    {
+        "location": "buenos_aires-argentina",
+        "LocationInformation": {
+            "address": {
+                "city": "Ciudad de Buenos Aires",
+                "countryCode": "ARG",
+                "countryName": "Argentina",
+                "county": "Ciudad de Buenos Aires",
+                "label": "Ciudad de Buenos Aires, Ciudad Autónoma de Buenos Aires, Argentina",
+                "postalCode": "C1066",
+                "state": "Ciudad Autónoma de Buenos Aires",
+                "stateCode": "CF"
+            },
+            "position": { "lat": -34.60849, "lng": -58.37344 }
+        }
+    },
+    {
+        "location": "porto_alegre-brazil",
+        "LocationInformation": {
+            "address": {
+                "city": "Porto Alegre",
+                "countryCode": "BRA",
+                "countryName": "Brasil",
+                "label": "Porto Alegre, RS, Brasil",
+                "postalCode": "90020-025",
+                "state": "Rio Grande do Sul",
+                "stateCode": "RS"
+            },
+            "position": { "lat": -30.03393, "lng": -51.22799 }
+        }
+    },
+    {
+        "location": "belo_horizonte-brazil",
+        "LocationInformation": {
+            "address": {
+                "city": "Belo Horizonte",
+                "countryCode": "BRA",
+                "countryName": "Brasil",
+                "label": "Belo Horizonte, MG, Brasil",
+                "postalCode": "30130-002",
+                "state": "Minas Gerais",
+                "stateCode": "MG"
+            },
+            "position": { "lat": -19.91952, "lng": -43.93833 }
+        }
+    },
+    {
+        "location": "la_plata-argentina",
+        "LocationInformation": {
+            "address": {
+                "city": "La Plata",
+                "countryCode": "ARG",
+                "countryName": "Argentina",
+                "county": "La Plata",
+                "label": "La Plata, Buenos Aires, Argentina",
+                "postalCode": "B1900",
+                "state": "Buenos Aires",
+                "stateCode": "BA"
+            },
+            "position": { "lat": -34.91393, "lng": -57.94636 }
+        }
+    },
+    {
+        "location": "dubai-united_arab_emirates",
+        "LocationInformation": {
+            "address": {
+                "city": "دبي",
+                "countryCode": "ARE",
+                "countryName": "الإمارات العربية المتحدة",
+                "county": "دبي",
+                "label": "دبي, الإمارات العربية المتحدة"
+            },
+            "position": { "lat": 25.26951, "lng": 55.30884 }
+        }
+    },
+    {
+        "location": "willemstad-netherlands_antilles",
+        "LocationInformation": {
+            "address": {
+                "city": "Willemstad",
+                "countryCode": "NLD",
+                "countryName": "Nederland",
+                "county": "Moerdijk",
+                "label": "Willemstad, Noord-Brabant, Nederland",
+                "postalCode": "4797 AM",
+                "state": "Noord-Brabant",
+                "stateCode": "NB"
+            },
+            "position": { "lat": 51.6912, "lng": 4.44104 }
+        }
+    },
+    {
+        "location": "brasilia-brazil",
+        "LocationInformation": {
+            "address": {
+                "city": "Brasília",
+                "countryCode": "BRA",
+                "countryName": "Brasil",
+                "label": "Brasília, DF, Brasil",
+                "state": "Distrito Federal",
+                "stateCode": "DF"
+            },
+            "position": { "lat": -15.77829, "lng": -47.92909 }
+        }
+    },
+    {
+        "location": "oklahoma-usa",
+        "LocationInformation": {
+            "address": {
+                "countryCode": "USA",
+                "countryName": "United States",
+                "label": "OK, United States",
+                "state": "Oklahoma",
+                "stateCode": "OK"
+            },
+            "position": { "lat": 35.47203, "lng": -97.52107 }
+        }
+    },
+    {
+        "location": "scheessel-germany",
+        "LocationInformation": {
+            "address": {
+                "city": "Scheeßel",
+                "countryCode": "DEU",
+                "countryName": "Deutschland",
+                "county": "Rotenburg (Wümme)",
+                "countyCode": "ROW",
+                "label": "Scheeßel, Niedersachsen, Deutschland",
+                "postalCode": "27383",
+                "state": "Niedersachsen",
+                "stateCode": "NI"
+            },
+            "position": { "lat": 53.16878, "lng": 9.48446 }
+        }
+    },
+    {
+        "location": "st_gallen-switzerland",
+        "LocationInformation": {
+            "address": {
+                "city": "Sankt Gallen",
+                "countryCode": "CHE",
+                "countryName": "Schweiz",
+                "county": "Sankt Gallen",
+                "label": "Sankt Gallen, Schweiz",
+                "postalCode": "9000",
+                "state": "Sankt Gallen",
+                "stateCode": "SG"
+            },
+            "position": { "lat": 47.42649, "lng": 9.37361 }
+        }
+    },
+    {
+        "location": "gdynia-poland",
+        "LocationInformation": {
+            "address": {
+                "city": "Gdynia",
+                "countryCode": "POL",
+                "countryName": "Polska",
+                "county": "Gdynia",
+                "label": "Gdynia, Woj. Pomorskie, Polska",
+                "postalCode": "81-364",
+                "state": "Woj. Pomorskie"
+            },
+            "position": { "lat": 54.51969, "lng": 18.5357 }
+        }
+    },
+    {
+        "location": "arras-france",
+        "LocationInformation": {
+            "address": {
+                "city": "Arras",
+                "countryCode": "FRA",
+                "countryName": "France",
+                "county": "Pas-de-Calais",
+                "label": "Arras, Hauts-de-France, France",
+                "postalCode": "62000",
+                "state": "Hauts-de-France",
+                "stateCode": "HDF"
+            },
+            "position": { "lat": 50.29169, "lng": 2.77954 }
+        }
+    },
+    {
+        "location": "san_jose-costa_rica",
+        "LocationInformation": {
+            "address": {
+                "countryCode": "CRI",
+                "countryName": "Costa Rica",
+                "label": "San José, Costa Rica",
+                "state": "San José",
+                "stateCode": "CR-SJ"
+            },
+            "position": { "lat": 9.60528, "lng": -83.99161 }
+        }
+    },
+    {
+        "location": "nickelsdorf-austria",
+        "LocationInformation": {
+            "address": {
+                "city": "Nickelsdorf",
+                "countryCode": "AUT",
+                "countryName": "Österreich",
+                "county": "Neusiedl am See",
+                "countyCode": "ND",
+                "label": "Nickelsdorf, Burgenland, Österreich",
+                "postalCode": "2425",
+                "state": "Burgenland",
+                "stateCode": "BGLD."
+            },
+            "position": { "lat": 47.94048, "lng": 17.06922 }
+        }
+    },
+    {
+        "location": "oregon-usa",
+        "LocationInformation": {
+            "address": {
+                "countryCode": "USA",
+                "countryName": "United States",
+                "label": "OR, United States",
+                "state": "Oregon",
+                "stateCode": "OR"
+            },
+            "position": { "lat": 44.93326, "lng": -123.04382 }
+        }
+    },
+    {
+        "location": "vancouver-canada",
+        "LocationInformation": {
+            "address": {
+                "city": "Vancouver",
+                "countryCode": "CAN",
+                "countryName": "Canada",
+                "county": "Metro Vancouver",
+                "label": "Vancouver, BC, Canada",
+                "postalCode": "V5Y",
+                "state": "British Columbia",
+                "stateCode": "BC"
+            },
+            "position": { "lat": 49.26038, "lng": -123.11336 }
+        }
+    },
+    {
+        "location": "prague-czechia",
+        "LocationInformation": {
+            "address": {
+                "city": "Praha",
+                "countryCode": "CZE",
+                "countryName": "Česko",
+                "county": "Hlavní město Praha",
+                "label": "Praha, Hlavní město Praha, Česko",
+                "postalCode": "120 00",
+                "state": "Hlavní město Praha"
+            },
+            "position": { "lat": 50.07914, "lng": 14.43299 }
+        }
+    }
+]

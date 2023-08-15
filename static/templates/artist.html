@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <link rel='stylesheet' type='text/css' media='screen' href='/static/css/main.css'>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="https://www.decalserpent.com/assets/images/guitar%20stickers/SP-STK-GUT-00044(main).jpg" type="image/x-icon">
+        <link rel="shortcut icon" href="https://www.decalserpent.com/assets/images/guitar%20stickers/SP-STK-GUT-00044(main).jpg" type="image/x-icon">
+        <script src="https://cdn.tailwindcss.com"></script></script>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-core.js"></script>
+        <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-service.js"></script>
+        <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-ui.js"></script>
+        <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-mapevents.js"></script>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <title>{{.Datas.Artist.Name}}</title>
+        <meta name="description" content="Groupie Tracker is your ultimate companion for staying connected with your favorite artists. Explore detailed information about artists, track their latest releases, and never miss an upcoming concert again. Discover a world of music and live performances with Groupie Tracker.">
+    </head>
+    <body>
+        <aside class="lg:w-[20%] w-full h-[50px] lg:h-[100px] flex z-[999] bg-white lg:flex-col fixed lg:top-0 bottom-0 text-black lg:h-screen shadowed border-r-[1px] p-8 lg:p-4">
+            <!-- Aside content goes here -->
+            <div class="hidden lg:flex items-center mb-4"> <!-- Logo -->
+                <img class="w-16 h-16" src="https://www.decalserpent.com/assets/images/guitar%20stickers/SP-STK-GUT-00044(main).jpg" alt="Logo">
+                <div>
+                    <p class="font-bold">Groupie Tracker</p>
+                    <div class="text-green-500 text-[10px] leading-4">Your Personal Guide to Musical Journeys</div>
+                </div>
+            </div>
+
+            <nav class="flex lg:flex-col justify-around items-center lg:items-start w-full lg:gap-6 lg:p-2">
+                <!-- Home Link -->
+                <a href="/" class="flex items-center space-x-2 hover:text-green-400 m-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6A2.25 2.25 0 016 3.75h2.25A2.25 2.25 0 0110.5 6v2.25a2.25 2.25 0 01-2.25 2.25H6a2.25 2.25 0 01-2.25-2.25V6zM3.75 15.75A2.25 2.25 0 016 13.5h2.25a2.25 2.25 0 012.25 2.25V18a2.25 2.25 0 01-2.25 2.25H6A2.25 2.25 0 013.75 18v-2.25zM13.5 6a2.25 2.25 0 012.25-2.25H18A2.25 2.25 0 0120.25 6v2.25A2.25 2.25 0 0118 10.5h-2.25a2.25 2.25 0 01-2.25-2.25V6zM13.5 15.75a2.25 2.25 0 012.25-2.25H18a2.25 2.25 0 012.25 2.25V18A2.25 2.25 0 0118 20.25h-2.25A2.25 2.25 0 0113.5 18v-2.25z" />
+                    </svg>
+                    <p class="hidden lg:block">Home</p>
+                </a>
+                <!-- Artists Link -->
+                <a href="/artists" class="flex items-center space-x-2 hover:text-green-400 m-0" style="margin-top: 0;">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 9l10.5-3m0 6.553v3.75a2.25 2.25 0 01-1.632 2.163l-1.32.377a1.803 1.803 0 11-.99-3.467l2.31-.66a2.25 2.25 0 001.632-2.163zm0 0V2.25L9 5.25v10.303m0 0v3.75a2.25 2.25 0 01-1.632 2.163l-1.32.377a1.803 1.803 0 01-.99-3.467l2.31-.66A2.25 2.25 0 009 15.553z" />
+                    </svg>
+                    <p class="hidden lg:block">Artists</p>
+                </a>
+            </nav>
+            <fo class="p-2 bg-white border-t-[1px] text-xs text-center z-[99] hidden lg:block mt-auto bottom-0 text-gray-500">Made with ❤️ By Abdou Aziz Ndiaye & Moussa Dieng from 🇸🇳</fo>
+        </aside>
+        <main class="lg:w-[80%] lg:ml-auto h-fit mb-[90px] lg:mb-4 p-4 lg:p-8">
+            <div class="underline back cursor-pointer flex items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18" />
+                </svg>
+                Back
+            </div>
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <img class="rounded-full shadowed" src="{{.Datas.Artist.Image}}">
+                <div class="w-full lg:w-[32%] leading-10">
+                    <h1 class="text-2xl md:text-3xl lg:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-br from-green-400 to-green-700">{{.Datas.Artist.Name}}</h1>
+                        <p>
+                            <span class="underline">Members</span>&nbsp;&nbsp;
+                            <span class ="text-green-500 font-bold">
+                                {{range .Datas.Artist.Members}}
+                                    {{.}} -
+                                    {{end}}
+                            </span>
+                        </p>
+                        <p>
+                            <span class="underline">First Album Release date</span>&nbsp;&nbsp;
+                            <span class="text-green-500 dates font-bold">{{.Datas.Artist.FirstAlbum}}</span>
+                        </p>
+                        <p>
+                            <span class="underline">Important dates</span>&nbsp;&nbsp;
+                            {{range .Datas.Dates.Dates}}
+                                <span class="dates text-green-500 font-bold">
+                                    {{.}}
+                                </span> - 
+                            {{end}}
+                        </p>
+                        <p>
+                            <span class="text-l underline">Debut Year</span>&nbsp;&nbsp;
+                            <span class="text-green-500 font-bold">{{.Datas.Artist.CreationDate}}</span>
+                        </p>
+                    </div>
+            </div>
+            </div>
+            <h1 class="text-xl lg:text-3xl font-bold my-6">Upcoming Concert    </h1>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 p-2">
+                {{ range $key, $values := .Datas.Relation.DateLocation}}
+                        {{ range $value := $values }}
+                        <div class="h-fit flex justify-between shadowed rounded-xl p-2">
+                            <div class="flex gap-2 items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6.115 5.19l.319 1.913A6 6 0 008.11 10.36L9.75 12l-.387.775c-.217.433-.132.956.21 1.298l1.348 1.348c.21.21.329.497.329.795v1.089c0 .426.24.815.622 1.006l.153.076c.433.217.956.132 1.298-.21l.723-.723a8.7 8.7 0 002.288-4.042 1.087 1.087 0 00-.358-1.099l-1.33-1.108c-.251-.21-.582-.299-.905-.245l-1.17.195a1.125 1.125 0 01-.98-.314l-.295-.295a1.125 1.125 0 010-1.591l.13-.132a1.125 1.125 0 011.3-.21l.603.302a.809.809 0 001.086-1.086L14.25 7.5l1.256-.837a4.5 4.5 0 001.528-1.732l.146-.292M6.115 5.19A9 9 0 1017.18 4.64M6.115 5.19A8.965 8.965 0 0112 3c1.929 0 3.716.607 5.18 1.64" />
+                                </svg>
+                            <p class="dates-and-locations capitalize font-medium">{{$key}}</p>
+                            </div>
+                                <div class="my-2 text-gray">
+                            <div class="flex gap-2 items-center px-2  border-r-2 last:border-r-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z" />
+                                </svg>
+                                <p class="dates text-xs">{{ $value }}</p>
+                            </div>
+                                </div>
+                        </div>
+                        {{end}}
+                {{ end }}
+            </div>
+            
+        </main>
+
+        
+        <script>
+            document.querySelector(".back").addEventListener("click", ()=>{history.back()})
+            document.querySelectorAll(".dates").forEach(date=>{
+            const splittedDate = date.textContent.split('-')
+            const dat = new Date(splittedDate[2],splittedDate[1]-1,splittedDate[0])
+            const formattedDate = dat.toLocaleDateString('en-US', { day: 'numeric', month: 'long', year: 'numeric' });
+            date.innerHTML = formattedDate
+            })
+            document.querySelectorAll(".dates-and-locations").forEach(dateAndLocation=>{
+                splittedDateAndLocation = dateAndLocation.textContent.split("-")
+                dateAndLocation.innerHTML=`<p class="font-bold text-green-500">${splittedDateAndLocation[1].replace("_"," ")}</p>
+                <p class="capitalize text-xs text-gray-500">${splittedDateAndLocation[0].replace("_"," ")}</p>
+                `
+            })
+        </script>
+    </body>
+</html>

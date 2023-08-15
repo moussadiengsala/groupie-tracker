@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <link rel='stylesheet' type='text/css' media='screen' href='/static/css/main.css'>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="https://www.decalserpent.com/assets/images/guitar%20stickers/SP-STK-GUT-00044(main).jpg" type="image/x-icon">
+        <link rel="shortcut icon" href="https://www.decalserpent.com/assets/images/guitar%20stickers/SP-STK-GUT-00044(main).jpg" type="image/x-icon">
+        <script src="https://cdn.tailwindcss.com"></script></script>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <title>Groupie Tracker</title>
+    </head>
+    <body class="flex-col  md:flex-row flex overflow-hidden bg-[#f4f4fa]">
+        <div class="mx-auto w-1/2 text-center p-4">
+            <h1 class="text-6xl font-bold text-green-500">{{.ErrorCode}}</h1>
+            <p class="my-4">{{.ErrorMessage}}</p>
+            <a href="/artists">
+                <button class="bg-green-500 text-white rounded-md p-2" type="submit">Retun to the homepage</button>
+            </a>
+        </div>
+    </body>
+</html>

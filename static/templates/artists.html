@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <link rel='stylesheet' type='text/css' media='screen' href='/static/css/main.css'>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="https://www.decalserpent.com/assets/images/guitar%20stickers/SP-STK-GUT-00044(main).jpg" type="image/x-icon">
+        <script src="https://cdn.tailwindcss.com"></script></script>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <meta property="og:image" content="https://www.decalserpent.com/assets/images/guitar%20stickers/SP-STK-GUT-00044(main).jpg">
+        <title>Groupie Tracker - Track Your Favorite Artists and Upcoming Concerts</title>
+        <meta name="description" content="Groupie Tracker is your ultimate companion for staying connected with your favorite artists. Explore detailed information about artists, track their latest releases, and never miss an upcoming concert again. Discover a world of music and live performances with Groupie Tracker.">
+    </head>
+    <body>
+        <aside class="lg:w-[20%] w-full h-[50px] lg:h-[100px] flex z-[999] bg-white lg:flex-col fixed lg:top-0 bottom-0 text-black lg:h-screen shadowed border-r-[1px] p-8 lg:p-4">
+            <!-- Aside content goes here -->
+            <div class="hidden lg:flex items-center mb-4"> <!-- Logo -->
+                <img class="w-16 h-16" src="https://www.decalserpent.com/assets/images/guitar%20stickers/SP-STK-GUT-00044(main).jpg" alt="Logo">
+                <div>
+                    <p class="font-bold">Groupie Tracker</p>
+                    <div class="text-green-500 text-[10px] leading-4">Your Personal Guide to Musical Journeys</div>
+                </div>
+            </div>
+
+            <nav class="flex lg:flex-col justify-around items-center lg:items-start w-full lg:gap-6 lg:p-2">
+                <!-- Home Link -->
+                <a href="/" class="flex items-center space-x-2 hover:text-green-400 m-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6A2.25 2.25 0 016 3.75h2.25A2.25 2.25 0 0110.5 6v2.25a2.25 2.25 0 01-2.25 2.25H6a2.25 2.25 0 01-2.25-2.25V6zM3.75 15.75A2.25 2.25 0 016 13.5h2.25a2.25 2.25 0 012.25 2.25V18a2.25 2.25 0 01-2.25 2.25H6A2.25 2.25 0 013.75 18v-2.25zM13.5 6a2.25 2.25 0 012.25-2.25H18A2.25 2.25 0 0120.25 6v2.25A2.25 2.25 0 0118 10.5h-2.25a2.25 2.25 0 01-2.25-2.25V6zM13.5 15.75a2.25 2.25 0 012.25-2.25H18a2.25 2.25 0 012.25 2.25V18A2.25 2.25 0 0118 20.25h-2.25A2.25 2.25 0 0113.5 18v-2.25z" />
+                    </svg>
+                    <p class="hidden lg:block">Home</p>
+                </a>
+                <!-- Artists Link -->
+                <a href="/artists" class="flex items-center space-x-2 hover:text-green-400 m-0" style="margin-top: 0;">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 9l10.5-3m0 6.553v3.75a2.25 2.25 0 01-1.632 2.163l-1.32.377a1.803 1.803 0 11-.99-3.467l2.31-.66a2.25 2.25 0 001.632-2.163zm0 0V2.25L9 5.25v10.303m0 0v3.75a2.25 2.25 0 01-1.632 2.163l-1.32.377a1.803 1.803 0 01-.99-3.467l2.31-.66A2.25 2.25 0 009 15.553z" />
+                    </svg>
+                    <p class="hidden lg:block">Artists</p>
+                </a>
+            </nav>
+            <fo class="p-2 bg-white border-t-[1px] text-xs text-center z-[99] hidden lg:block mt-auto bottom-0 text-gray-500">Made with ❤️ By Abdou Aziz Ndiaye & Moussa Dieng from 🇸🇳</fo>
+        </aside>
+        <main class="lg:w-[80%] lg:ml-auto h-fit mb-[90px] lg:mb-4">
+            <header class="h-auto shadowed bg-white p-2 lg:p-4">
+                <form method="post">
+                    <div class="relative mx-4">
+                        <div
+                            class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none"
+                        >
+                            <svg
+                                aria-hidden="true"
+                                class="w-5 h-5 text-gray-500 dark:text-gray-400"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                                ></path>
+                            </svg>
+                        </div>
+                        <input
+                            type="search"
+                            id="search"
+                            name="value"
+                            class="block w-full lg:w-[330px] p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-xl bg-gray-50 focus:ring-blue-500 focus:border-blue-500"
+                            placeholder="Search artists, members, release date......"
+                            required
+                        />
+                        <div style="display: none;" id="suggestion" class="shadowed suggestions flex gap-4 flex-col bg-white absolute max-h-[300px] w-full lg:w-[330px] rounded-md p-4 overflow-scroll z-[999]">
+                            {{ range .Datas }}
+                                {{ $Image := .Artist.Image }}
+                                {{ $ID := .Artist.Id }}
+
+                                <!-- Creation Date -->
+                                <a class="flex justify-between" href="artists/{{.Artist.Id}}">
+                                    <div class="datas w-full mb-4">
+                                        <span class="flex w-full justify-between">
+                                            <span>
+                                                <p class="capitalize">{{.Artist.CreationDate}}</p>
+                                                <small class="text-green-400">Creation Date</small>
+                                            </span>
+                                            <img class="w-10 h-10 shadowed rounded-full" src="{{.Artist.Image}}" alt="">
+                                        </span>
+                                    </div>
+                                </a>
+                                <!-- First Album Date -->
+                                <a class="flex justify-between" href="artists/{{.Artist.Id}}">
+                                    <div class="datas w-full mb-4">
+                                        <span class="flex w-full justify-between">
+                                            <span>
+                                                <p class="capitalize">{{.Artist.FirstAlbum}}</p>
+                                                <small class="text-green-400">First Album</small>
+                                            </span>
+                                            <img class="w-10 h-10 shadowed rounded-full" src="{{.Artist.Image}}" alt="">
+                                        </span>
+                                    </div>
+                                </a>
+                                    <!-- Location -->
+                                    {{ range $key, $value := .Relation.DateLocation }}
+                                        <a href="artists/{{$ID}}">
+                                        <div class="datas  mb-4">
+                                            <span class="flex w-full justify-between">
+                                                <span>
+                                                    <p class="locations capitalize">{{$key}}</p>
+                                                    <small class="text-green-400">Location</small>
+                                                </span>
+                                                <img class="w-10 h-10 shadowed rounded-full" src="{{$Image}}" alt="No Found">
+                                            </span>
+                                        </div>
+                                        </a>
+                                    {{end}}
+
+
+                                    {{ range .Artist.Members }}
+                                    <a href="artists/{{$ID}}">
+                                        <div class="datas mb-4">
+                                            <span class="flex justify-between w-full">
+                                                <span>
+                                                    <p>{{.}}</p>
+                                                    <small class="text-green-400">Member</small>
+                                                </span>
+                                                <img class="w-10 h-10 shadowed rounded-full" src="{{$Image}}" alt="No Found">
+                                            </span>
+                                        </div>
+                                    </a>
+                                {{ end }}
+                                <!-- Artist -->
+                                <a class="flex justify-between" href="artists/{{.Artist.Id}}">
+                                    <div class="datas w-full mb-4">
+                                        <span class="flex w-full justify-between">
+                                            <span>
+                                                <p>{{.Artist.Name}}</p>
+                                                <small class="text-green-400">Artist</small>
+                                            </span>
+                                            <img class="w-10 h-10 shadowed rounded-full" src="{{.Artist.Image}}" alt="">
+                                        </span>
+                                    </div>
+                                </a>
+                            {{end}}
+                        </div>
+                    </div>
+                </form>
+            </header>
+
+            <div class="p-4 bg-white">
+                <h2 class="text-lg font-semibold mb-2 flex items-center">Filter</h2>
+                <small class="hover:underline text-green-500 show-filter cursor-pointer">Hide fields</small>
+                <div class="w-full fields md:w-2/3 p-5 rounded-lg">
+                        <div class="w-full transition-all ease-in-out delay-150">
+                            <form id="filter" method="post" action="/artists" class="lg:w-fit flex flex-col gap-4">
+                                <section class="flex flex-wrap items-center gap-4">
+                                  <select   name="location" class="px-4 py-3 w-[300px] capitalize  rounded-md bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0 text-sm">
+                                      <option value="">Select a City</option>
+                                      {{ range .LocationConcert }}
+                                          <option value="{{ . }}" class="bg-white dates p-4 text-black capitalize"></option>
+                                      {{ end }}
+                                  </select>
+                                  <div class="col-span-2  flex flex-col border-transparent focus:border-gray-500 focus:bg-white focus:ring-0 text-sm">
+                                      <p class="text-sm mb-2">Number of members:</p>
+                                      <fieldset class="flex justify-center items-center gap-2">
+                                            {{range .Members}}
+                                            <div class="flex gap-2">
+                                                <input  class="accent-[#0c840c]" type="checkbox" id="member-{{.}}" name="members" value="{{.}}"/>
+                                                <label for="member-{{.}}" class="gap-2"> {{.}}</label>
+                                            </div>
+		                                    {{end}}
+                                      </fieldset>
+                                  </div>
+                                </section>
+
+                                      <section class="grid lg:grid-cols-2  w-full items-center gap-4">
+                                          <div class="range-tracker p-2 w-full rounded-md border-transparent focus:border-gray-500 focus:bg-white focus:ring-0 text-sm">
+                                              <p>Creation date</p>
+                                              <div class="range-tracker-input py-4">
+                                                  <div class="slider-track"></div>
+                                                  {{ range $i, $val := .CreateDate }}
+                                                      <input type="range" min="1940" max="2023" value="{{ $val }}" step="1" class="slider-{{ $i }}" name="creation-date-{{ $i }}" />
+                                                  {{ end }}
+                                              </div>
+                                              <div class="range-tracker-number flex justify-between gap-2">
+                                                  <div class="slider-1-number  text-center">2023</div>
+                                                  <div class="slider-2-number  text-center">1940</div>
+                                              </div>
+                                          </div>
+
+                                          <div class="range-tracker  px-4 py-3 w-full border-transparent focus:border-gray-500 focus:bg-white focus:ring-0 text-sm">
+                                              <p>First album release</p>
+                                              <div class="range-tracker-input py-4">
+                                                  <div class="slider-track"></div>
+                                                  {{ range $i, $val := .FirtAlbumReleases }}
+                                                      <input type="range" min="1940" max="2023" value="{{ $val }}" step="1" class="slider-{{ $i }}" name="first-album-release-{{ $i }}" />
+                                                  {{ end }}
+                                              </div>
+                                              <div class="range-tracker-number flex justify-between gap-2">
+                                                  <div class="slider-1-number rounded-4 text-center">2023</div>
+                                                  <div class="slider-2-number rounded-4 text-center">1940</div>
+                                              </div>
+                                          </div>
+                                      </section>
+
+                                  <button class="bg-green-500 text-white rounded-md py-2" type="submit">Show to result</button>
+                              </form>
+                        </div>
+                    </div>
+            </div>
+            <footer class="p-2 bg-white border-t-[1px] text-xs fixed text-center z-[99] lg:w-[80%] bottom-0 text-gray-500">Made with ❤️ By Abdou Aziz Ndiaye & Moussa Dieng from 🇸🇳</footer>
+
+            <section class="p-4 card-section grid lg:grid-cols-4 gap-2 place-items-center">
+                {{ range .Datas }}
+                <div class="">
+                    <a href="/artists/{{ .Artist.Id }}"
+                        ><img
+                            class="aspect-square rounded-2xl shadowed object-cover"
+                            src="{{.Artist.Image}}"
+                            alt=""
+                    /></a>
+                    <!-- Card Title -->
+                    <div class="my-2">
+                        <h1 class="font-bold">{{.Artist.Name}}</h1>
+                    </div>
+                    <!-- End of Card title -->
+                </div>
+                {{ end }}
+            </section>
+        </main>
+        <script src="/static/javascript/filter.js"></script>
+        <script src="/static/javascript/search.js"></script>
+        <!-- <script src="/static/javascript/s.js"></script> -->
+        <script>
+            document.querySelectorAll(".dates").forEach(date=>{
+                date.textContent = date.value.split("-")[0].replace("_"," ")
+            })
+            if (document.querySelector(".card-section").childElementCount=== 0){
+                document.querySelector(".card-section").innerHTML = `<div class="col-span-4 text-center">
+                        <p>No Results</p>
+                        <small class="text-gray-400">Try new filter</small>
+                    </div>`
+            }
+        </script>
+    </body>
+</html>

@@ -1,51 +1,42 @@
-// const previous = document.getElementById("previous");
-// const next = document.getElementById("next");
-// const carousel = document.querySelectorAll(".carousel");
+const previous = document.getElementById("previous");
+const next = document.getElementById("next");
+const carousel = document.getElementById("carousel");
+const slider = document.getElementById("slider");
 
-// let step = 0;
-// let width = carousel.offsetWidth;
-// let mounToMove = window.innerWidth - 200;
+console.log(carousel.children)
 
-// const carouselEvent = () => {
-//     let isMobile = window.innerWidth <= 768;
-//     mounToMove = isMobile
-//         ? carousel.firstElementChild.clientWidth + 64
-//         : window.innerWidth - 200;
-// };
-// (function () {
-//     carouselEvent();
-// })();
+// for (let i = 0; i < carousel.children.length; i++) {
+//     console.log(carousel.children[i].clientWidth)
+// }
 
-// window.addEventListener("resize", () => {
-//     carouselEvent();
-// });
+let step = 0;
+let mounToMove = carousel.firstElementChild.clientWidth + 32 //  window.innerWidth - 200
+let width = carousel.offsetWidth  - (slider.offsetWidth);
 
-// previous.onclick = () => {
-//     if (step < 0) {
-//         step += mounToMove;
-//     }
-//     carousel.style.transform = "translate(" + `${step}` + "px,-50%)";
-// };
-// next.onclick = () => {
-//     // let mounToMove = window.innerWidth - 200
-//     let limit = width - mounToMove;
-//     if (step > -limit) {
-//         step -= mounToMove;
-//     }
-//     carousel.style.transform = "translate(" + `${step}` + "px,-50%)";
-// };
+const carouselEvent = ()=>{
+    mounToMove = carousel.firstElementChild.clientWidth + 32 //  window.innerWidth - 200
+    width = carousel.offsetWidth  - (slider.offsetWidth);
+}
 
-// document.querySelectorAll(".carousel").forEach((current) => {
-//     let one =
-//         ((current.firstElementChild.clientWidth + 64) * 100) /
-//         current.clientWidth;
-//     console.log(one * 52);
+(function (){
+    carouselEvent()
+})()
+    window.addEventListener("resize",()=>{
+        carouselEvent()
+})
 
-//     previous.onclick = () => {
-//         current.style.transform = `translateX(${
-//             current.getBoundingClientRect().x -
-//             (current.firstElementChild.clientWidth + 64)
-//         }px)`;
-//         // console.log(current);
-//     };
-// });
+
+previous.onclick = () => {
+    if (step < 0) {
+        step += mounToMove;
+    }
+    carousel.style.transform = "translate(" + `${step}` + "px,0%)";
+};
+next.onclick = () => {
+    // let mounToMove = window.innerWidth - 200
+    let limit = width - mounToMove;
+    if (step > -limit) {
+        step -= mounToMove;
+    }
+    carousel.style.transform = "translate(" + `${step}` + "px,0%)";
+};

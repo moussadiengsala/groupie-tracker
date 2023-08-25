@@ -26,7 +26,7 @@
         <meta name="description" content="Groupie Tracker is your ultimate companion for staying connected with your favorite artists. Explore detailed information about artists, track their latest releases, and never miss an upcoming concert again. Discover a world of music and live performances with Groupie Tracker.">
     </head>
     <body>
-        <aside class="lg:w-[20%] w-full h-[50px] lg:h-[100px] flex z-[999] bg-white lg:flex-col fixed lg:top-0 bottom-0 text-black lg:h-screen shadowed border-r-[1px] p-8 lg:p-4">
+        <aside id="aside" class="lg:w-[20%] w-full h-[50px] lg:h-[100px] flex z-[999] bg-white lg:flex-col fixed lg:top-0 bottom-0 text-black lg:h-screen shadowed border-r-[1px] p-8 lg:p-4">
             <!-- Aside content goes here -->
             <div class="hidden lg:flex items-center mb-4"> <!-- Logo -->
                 <img class="w-16 h-16" src="https://www.decalserpent.com/assets/images/guitar%20stickers/SP-STK-GUT-00044(main).jpg" alt="Logo">
@@ -163,64 +163,48 @@
             </header>
                 
                 <!-- Slider -->
-            <section id="slider" class="h-fit overflow-hidden bg-red-500 w-full relative py-4 lg:p-8 flex whitespace-nowrap">
+            <section id="slider" class="h-fit overflow-hidden w-full relative">
                 <!-- Artist Card -->
-                <div class="w-[150px] absolute bg-gradient-to-r from-white via-transparent to-transparent left-0 h-full top-0 flex items-center p-4 z-[99]">
-                    <button id="previous" class="p-1 text-white rounded-full bg-black opacity-50">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18" />
-                        </svg>
-                    </button>
-                </div>
+                <div class="flex justify-between items-center p-4 w-full">
+                    <a href="/artites" class="text-2xl font-bold my-4 text-green-500">All Artists</a>
+                    <!-- button let/right -->
+                    <div>
+                        <button id="previous" class="p-1 text-white rounded-full bg-black/60">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+                            </svg>                              
+                        </button>
 
+                        <button id="next" class="p-1 text-white rounded-full bg-black/60 ">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                            </svg>                              
+                        </button>
+                    </div>
+
+                </div>
+               
                 <!-- <div class="overflow-x-scroll relative w-full h-full"> -->
                     <!-- class="absolute top-1/2 transform -translate-y-1/2 flex gap-16 lg:mx-16 w-max transition duration-1000 ease-in-out bg-green-500" -->
-                <div class="carousel flex flex-nowrap bg-green-500 h-fit whitespace-nowrap gap-16 px-4">
-                    {{ range .Datas }}
-                    <div class="w-max">
-                        <a href="/artists/{{ .Artist.Id }}">
-                            <img
-                                class="h-[200px] aspect-square rounded-2xl shadowed object-cover"
-                                src="{{.Artist.Image}}"
-                                alt=""
-                        /></a>
-                        <!-- Card Title -->
-                        <div class="my-2">
-                            <h1 class="font-bold">{{.Artist.Name}}</h1>
-                            <small class="text-gray-500">{{.Artist.Name}}</small>
+                <div class="inline-flex">
+                    <div id="carousel" class="flex flex-nowrap h-fit gap-8 px-4 transition-all duration-1000">
+                        {{ range $i, $elem := .Datas }}
+                        <div class="w-max basis-full {{if not $i}}active{{end}}">
+                            <a href="/artists/{{ $elem.Artist.Id }}">
+                                <img
+                                    class="h-[200px] aspect-square rounded-2xl shadowed object-cover"
+                                    src="{{$elem.Artist.Image}}"
+                                    alt=""
+                            /></a>
+                            <!-- Card Title -->
+                            <div class="my-2">
+                                <h1 class="font-bold">{{$elem.Artist.Name}}</h1>
+                                <small class="text-gray-500">{{$elem.Artist.Name}}</small>
+                            </div>
+                            <!-- End of Card title -->
                         </div>
-                        <!-- End of Card title -->
+                        {{ end }}
                     </div>
-                    {{ end }}
-                </div>
-
-                <div class="carousel flex flex-nowrap bg-green-500 h-fit whitespace-nowrap gap-16 px-4">
-                    {{ range .Datas }}
-                    <div class="w-max">
-                        <a href="/artists/{{ .Artist.Id }}">
-                            <img
-                                class="h-[200px] aspect-square rounded-2xl shadowed object-cover"
-                                src="{{.Artist.Image}}"
-                                alt=""
-                        /></a>
-                        <!-- Card Title -->
-                        <div class="my-2">
-                            <h1 class="font-bold">{{.Artist.Name}}</h1>
-                            <small class="text-gray-500">{{.Artist.Name}}</small>
-                        </div>
-                        <!-- End of Card title -->
-                    </div>
-                    {{ end }}
-                </div>
-
-                <!-- End of Artist Card -->
-                <div class="w-[150px] absolute right-0 bg-gradient-to-l from-white via-transparent to-transparent h-full top-0 flex items-center justify-end p-4 z-[99]">
-                    <button id="next" class="z-2 p-1 text-white rounded-full bg-black opacity-50">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
-                        </svg>
-                    </button>
-                </div>
             </section>
             <!-- End of slider -->
 

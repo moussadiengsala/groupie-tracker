@@ -174,20 +174,4 @@ a {
     border: 3px solid #22c55e;
 }
 
-/* caroussel */
-#slider:hover .carousel {
-    animation-play-state: paused;
-}
-.carousel {
-    display: inline-block;
-    animation: 25s caroussel_animation infinite linear;
-}
 
-@keyframes caroussel_animation {
-    0% {
-        transform: translateX(0%);
-    }
-    100% {
-        transform: translateX(-100%);
-    }
-}

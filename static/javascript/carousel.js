@@ -3,40 +3,30 @@ const next = document.getElementById("next");
 const carousel = document.getElementById("carousel");
 const slider = document.getElementById("slider");
 
-console.log(carousel.children)
+let step = 0
+let width = carousel.getBoundingClientRect().width  - (slider.getBoundingClientRect().width);
 
-// for (let i = 0; i < carousel.children.length; i++) {
-//     console.log(carousel.children[i].clientWidth)
-// }
+next.onclick = () => {
+    let currentelem = carousel.querySelector(".active");
+    let nextElement = currentelem.nextElementSibling;
 
-let step = 0;
-let mounToMove = carousel.firstElementChild.clientWidth + 32 //  window.innerWidth - 200
-let width = carousel.offsetWidth  - (slider.offsetWidth);
-
-const carouselEvent = ()=>{
-    mounToMove = carousel.firstElementChild.clientWidth + 32 //  window.innerWidth - 200
-    width = carousel.offsetWidth  - (slider.offsetWidth);
+    console.log(currentelem.getBoundingClientRect().width)
+    if ((width > -step) && (nextElement != null )) {
+        step -= currentelem.getBoundingClientRect().width
+        carousel.style.transform = "translate(" + `${step}` + "px,0%)";
+        currentelem.classList.remove("active");
+        nextElement.classList.add("active");
+    } 
 }
 
-(function (){
-    carouselEvent()
-})()
-    window.addEventListener("resize",()=>{
-        carouselEvent()
-})
-
-
 previous.onclick = () => {
-    if (step < 0) {
-        step += mounToMove;
+    let currentelem = carousel.querySelector(".active");
+    let previouselem = currentelem.previousElementSibling;
+
+    if ((step < 0) && (previouselem != null )) {
+        step += currentelem.getBoundingClientRect().width
+        carousel.style.transform = "translate(" + `${step}` + "px,0%)";
+        currentelem.classList.remove("active");
+        previouselem.classList.add("active");
     }
-    carousel.style.transform = "translate(" + `${step}` + "px,0%)";
-};
-next.onclick = () => {
-    // let mounToMove = window.innerWidth - 200
-    let limit = width - mounToMove;
-    if (step > -limit) {
-        step -= mounToMove;
-    }
-    carousel.style.transform = "translate(" + `${step}` + "px,0%)";
-};
+}

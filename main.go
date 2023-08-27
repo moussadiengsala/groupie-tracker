@@ -16,6 +16,9 @@ func main() {
 		"/artists":  handlers.AllArtist,
 		"/artists/": handlers.SingleArtist,
 		"/map":      handlers.Map,
+		// "/mapdataartists": handlers.MapInfoArtists,
+		"/allartists":   handlers.AllDataArtist,
+		"/singleartist/": handlers.SingleDataArtist,
 	}
 	// serve the files under the "/static/" URL path
 	http.Handle("/static/", http.StripPrefix("/static/", http.FileServer(http.Dir("./static"))))

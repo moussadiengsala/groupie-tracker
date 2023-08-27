@@ -102,7 +102,7 @@ func Map(w http.ResponseWriter, r *http.Request) {
 	w.Write(file)
 }
 
-func Search(w http.ResponseWriter, r *http.Request) {
+func MapInfoArtists(w http.ResponseWriter, r *http.Request) {
 	var fullArtistsInfo, err = Controllers.GetFullArtistDetails()
 
 	if r.Method != "GET" {
@@ -114,6 +114,42 @@ func Search(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 	var jsonData, _ = json.MarshalIndent(fullArtistsInfo, "", "   ")
+	w.Header().Set("Content-Type", "application/json")
+	w.Write(jsonData)
+}
+
+func AllDataArtist(w http.ResponseWriter, r *http.Request) {
+	var fullArtistsInfo, err = Controllers.GetFullArtistDetails()
+	if r.Method != "GET" {
+		utils.ErrorThrower(w, http.StatusMethodNotAllowed, "Not allowed")
+		return
+	}
+	if err != nil {
+		utils.ErrorThrower(w, http.StatusInternalServerError, "Internal error")
+		return
+	}
+	var jsonData, _ = json.MarshalIndent(fullArtistsInfo, "", "\t")
+	w.Header().Set("Content-Type", "application/json")
+	w.Write(jsonData)
+}
+
+func SingleDataArtist(w http.ResponseWriter, r *http.Request) {
+	if r.Method != "GET" {
+		utils.ErrorThrower(w, http.StatusMethodNotAllowed, "Not allowed")
+		return
+	}
+	splittedURL := strings.Split(r.URL.Path, "/")
+	if len(splittedURL) != 3 {
+		utils.ErrorThrower(w, http.StatusNotFound, "Not Found")
+		return
+	}
+	artistId := splittedURL[len(splittedURL)-1]
+	var singleArtist, err = Controllers.GetSingleArtist(artistId)
+	if err != nil {
+		utils.ErrorThrower(w, http.StatusInternalServerError, "Internal error")
+		return
+	}
+	var jsonData, _ = json.MarshalIndent(singleArtist, "", "\t")
 	w.Header().Set("Content-Type", "application/json")
 	w.Write(jsonData)
 }

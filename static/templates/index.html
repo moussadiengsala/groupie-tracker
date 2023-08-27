@@ -187,9 +187,9 @@
                 <!-- <div class="overflow-x-scroll relative w-full h-full"> -->
                     <!-- class="absolute top-1/2 transform -translate-y-1/2 flex gap-16 lg:mx-16 w-max transition duration-1000 ease-in-out bg-green-500" -->
                 <div class="inline-flex">
-                    <div id="carousel" class="flex flex-nowrap h-fit gap-8 px-4 transition-all duration-1000">
+                    <div id="carousel" class="flex flex-nowrap h-fit transition-all duration-1000">
                         {{ range $i, $elem := .Datas }}
-                        <div class="w-max basis-full {{if not $i}}active{{end}}">
+                        <div class="w-max basis-full px-4 {{if not $i}}active{{end}}">
                             <a href="/artists/{{ $elem.Artist.Id }}">
                                 <img
                                     class="h-[200px] aspect-square rounded-2xl shadowed object-cover"

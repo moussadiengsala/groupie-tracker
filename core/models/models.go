@@ -41,4 +41,5 @@ type Filters struct {
 	CreationDate      []int
 	FirstAlbumRelease []int
 	Location          string
+	Shearch           string
 }

@@ -67,6 +67,7 @@ func FilterForGettingUniqueLocation(data []models.SingleArtist) []string {
 }
 
 func Filter(DataToFilter []models.SingleArtist, filters models.Filters) ([]models.SingleArtist, error) {
+
 	var FilteredDatas = []models.SingleArtist{}
 	var isNumberOfMembersMatched = func(value models.SingleArtist) bool {
 		if len(filters.NumberOfMembers) == 0 {
@@ -79,23 +80,42 @@ func Filter(DataToFilter []models.SingleArtist, filters models.Filters) ([]model
 		}
 		return false
 	}
+
 	var isInCreationDateRange = func(value models.SingleArtist) bool {
 		return value.Artist.CreationDate >= filters.CreationDate[0] && value.Artist.CreationDate <= filters.CreationDate[1]
 	}
+
 	var isInFirstAlbumYearRange = func(value models.SingleArtist) bool {
 		var firstAlbum = strings.Split(value.Artist.FirstAlbum, "-")
 		var firstAlbumYear, _ = strconv.Atoi(firstAlbum[len(firstAlbum)-1])
 		return firstAlbumYear >= filters.FirstAlbumRelease[0] && firstAlbumYear <= filters.FirstAlbumRelease[1]
 	}
 
+	var f = func(str ...string) bool {
+		for _, v := range str {
+			if strings.Contains(strings.ToLower(v), strings.ToLower(filters.Shearch)) {
+				return true
+			}
+		}
+		return false
+	}
+
 	for _, data := range DataToFilter {
-		if isNumberOfMembersMatched(data) && IsContainsOnArray(data.Location.Locations, filters.Location) && isInCreationDateRange(data) && isInFirstAlbumYearRange(data) {
-			FilteredDatas = append(FilteredDatas, data)
+		if filters.Shearch == "" {
+			if isNumberOfMembersMatched(data) && IsContainsOnArray(data.Location.Locations, filters.Location) && isInCreationDateRange(data) && isInFirstAlbumYearRange(data) {
+				FilteredDatas = append(FilteredDatas, data)
+			}
+		} else {
+			if f(data.Artist.Name, strings.Join(data.Artist.Members, " "), data.Artist.FirstAlbum, data.Artist.ConcertDates) {
+
+				FilteredDatas = append(FilteredDatas, data)
+			}
 		}
 	}
 
 	return FilteredDatas, nil
 }
+
 func ErrorThrower(w http.ResponseWriter, errorCode int, message string) {
 	tmpl := template.Must(template.ParseFiles("static/templates/error.html"))
 	w.WriteHeader(errorCode)

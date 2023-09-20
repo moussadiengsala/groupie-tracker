@@ -15,19 +15,21 @@ import (
 )
 
 func AllArtist(w http.ResponseWriter, r *http.Request) {
+	var filters models.Filters
 	r.ParseForm()
 	var fullArtistsInfo, err = Controllers.GetFullArtistDetails()
-	// var AllLocations = utils.FilterForGettingUniqueLocation(fullArtistsInfo)
 
 	if err != nil {
 		utils.ErrorThrower(w, http.StatusInternalServerError, "Internal error")
 		return
 	}
-	filters := models.Filters{
-		NumberOfMembers:   utils.ConvertArrayToInt((r.Form["members"])),
-		CreationDate:      []int{utils.ConverToInt(r.FormValue("creation-date-0")), utils.ConverToInt(r.FormValue("creation-date-1"))},
-		FirstAlbumRelease: []int{utils.ConverToInt(r.FormValue("first-album-release-0")), utils.ConverToInt(r.FormValue("first-album-release-1"))},
-		Location:          r.FormValue("location"),
+
+	filters.Shearch = r.FormValue("search")
+	if filters.Shearch == "" {
+		filters.NumberOfMembers = utils.ConvertArrayToInt((r.Form["members"]))
+		filters.CreationDate = []int{utils.ConverToInt(r.FormValue("creation-date-0")), utils.ConverToInt(r.FormValue("creation-date-1"))}
+		filters.FirstAlbumRelease = []int{utils.ConverToInt(r.FormValue("first-album-release-0")), utils.ConverToInt(r.FormValue("first-album-release-1"))}
+		filters.Location = r.FormValue("location")
 	}
 
 	if r.Method == http.MethodPost {
@@ -37,8 +39,8 @@ func AllArtist(w http.ResponseWriter, r *http.Request) {
 			utils.ErrorThrower(w, http.StatusInternalServerError, "Internal error")
 			return
 		}
-
 	}
+
 	tmpl, errparse := template.ParseFiles("static/templates/artists.html")
 	if errparse != nil {
 		utils.ErrorThrower(w, http.StatusInternalServerError, "Internal error")
@@ -50,7 +52,7 @@ func AllArtist(w http.ResponseWriter, r *http.Request) {
 	tmpl.Execute(w, map[string]interface{}{
 		"Datas": fullArtistsInfo,
 		// "Locations":         AllLocations,
-		"Members":           []int{1, 2, 3, 4, 5, 6, 7,8},
+		"Members":           []int{1, 2, 3, 4, 5, 6, 7, 8},
 		"CreateDate":        []string{"1940", "2023"},
 		"FirtAlbumReleases": []string{"1940", "2023"},
 		"LocationConcert":   utils.FilterForGettingUniqueLocation(forLocationPurpose),

@@ -12,13 +12,13 @@ func main() {
 	// api.Map()
 	// This where to declare routes and their handlers
 	routes := map[string]func(http.ResponseWriter, *http.Request){
-		"/":         handlers.Root,
-		"/artists":  handlers.AllArtist,
-		"/artists/": handlers.SingleArtist,
-		"/map":      handlers.Map,
-		// "/mapdataartists": handlers.MapInfoArtists,
-		"/allartists":   handlers.AllDataArtist,
+		"/":              handlers.Root,
+		"/artists":       handlers.AllArtist,
+		"/artists/":      handlers.SingleArtist,
+		"/map":           handlers.Map,
+		"/allartists":    handlers.AllDataArtist,
 		"/singleartist/": handlers.SingleDataArtist,
+		// "/mapdataartists": handlers.MapInfoArtists,
 	}
 	// serve the files under the "/static/" URL path
 	http.Handle("/static/", http.StripPrefix("/static/", http.FileServer(http.Dir("./static"))))

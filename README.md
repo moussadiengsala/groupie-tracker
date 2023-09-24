@@ -15,6 +15,11 @@ Groupie Trackers consists on receiving a given API and manipulate the data conta
   * And the last one, relation, does the link between all the other parts, artists, dates and locations.
 
 ## Briefly about the project
+The "Groupie Tracker" project is a web application that harnesses the power of Go's backend capabilities to provide an engaging and user-friendly experience. The core objective of this project is to retrieve data from a provided API and present it in an organized and visually appealing manner.
+
+The project comprises four essential components: artists, locations, dates, and relations. Artists include details about bands and musicians, locations provide insights into concert venues, dates offer information about past and upcoming events, and relations establish connections between all these components.
+
+In summary, "Groupie Tracker" is an opportunity to explore data manipulation, JSON handling, HTML, event-driven programming, and client-server communication—all while adhering to best practices in Go development. Enjoy building this informative and dynamic web application!
 ## Usage
 ## Author
 - [@mousdieng](https://learn.zone01dakar.sn/git/mousdieng)

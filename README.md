@@ -15,12 +15,8 @@ Groupie Trackers consists on receiving a given API and manipulate the data conta
   * And the last one, relation, does the link between all the other parts, artists, dates and locations.
 
 ## Briefly about the project
-
 ## Usage
-
 ## Author
-
-- [@abdouazindiaye](https://learn.zone01dakar.sn/git/abdouazindiaye)
 - [@mousdieng](https://learn.zone01dakar.sn/git/mousdieng)
 
 ![Logo](https://go.dev/images/go-logo-white.svg)

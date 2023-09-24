@@ -21,7 +21,7 @@ The project comprises four essential components: artists, locations, dates, and 
 
 In summary, "Groupie Tracker" is an opportunity to explore data manipulation, JSON handling, HTML, event-driven programming, and client-server communication—all while adhering to best practices in Go development. Enjoy building this informative and dynamic web application!
 
-## Overviews
+## Overview
   ![overview1](static/readmesrc/Screenshot%20from%202023-09-24%2017-24-36%201.jpg)
   ![overview2](static/readmesrc/Screenshot%20from%202023-09-24%2017-24-57%201.png)
   ![overview3](static/readmesrc/Screenshot%20from%202023-09-24%2017-25-15%201.png)

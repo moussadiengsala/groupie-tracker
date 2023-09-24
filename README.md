@@ -21,6 +21,18 @@ The project comprises four essential components: artists, locations, dates, and 
 
 In summary, "Groupie Tracker" is an opportunity to explore data manipulation, JSON handling, HTML, event-driven programming, and client-server communication—all while adhering to best practices in Go development. Enjoy building this informative and dynamic web application!
 ## Usage
+  * Method 1:
+    * install [go](https://go.dev/doc/install)
+    * `go run main.go`
+    * go to [http://localhost:8000](http://localhost:8000)
+
+  * Method 2:
+    * install [docker](https://www.docker.com/)
+    * execute the commands in build.sh for:
+      * creating a docker image
+      * running the image
+    * go to [http://localhost:8000](http://localhost:8000)
+
 ## Author
 - [@mousdieng](https://learn.zone01dakar.sn/git/mousdieng)
 

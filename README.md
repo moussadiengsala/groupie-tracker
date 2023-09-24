@@ -20,6 +20,12 @@ The "Groupie Tracker" project is a web application that harnesses the power of G
 The project comprises four essential components: artists, locations, dates, and relations. Artists include details about bands and musicians, locations provide insights into concert venues, dates offer information about past and upcoming events, and relations establish connections between all these components.
 
 In summary, "Groupie Tracker" is an opportunity to explore data manipulation, JSON handling, HTML, event-driven programming, and client-server communication—all while adhering to best practices in Go development. Enjoy building this informative and dynamic web application!
+
+## Overviews
+  ![overview1](../../moussa/Downloads/Screenshot%20from%202023-09-24%2017-24-36%201.jpg)
+  ![overview2](../../moussa/Downloads/Screenshot%20from%202023-09-24%2017-24-57%201.png)
+  ![overview3](../../moussa/Downloads/Screenshot%20from%202023-09-24%2017-25-15%201.png)
+
 ## Usage
   * Method 1:
     * install [go](https://go.dev/doc/install)

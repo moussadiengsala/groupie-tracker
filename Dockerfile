@@ -1,4 +1,4 @@
-FROM golang:1.13.8-alpine3.11
+FROM golang:1.20-alpine3.18
 LABEL name="groupie-tracker"
 LABEL description=""
 LABEL authors="moussadieng"

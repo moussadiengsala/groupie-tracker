@@ -41,5 +41,6 @@ In summary, "Groupie Tracker" is an opportunity to explore data manipulation, JS
 
 ## Author
 - [@mousdieng](https://learn.zone01dakar.sn/git/mousdieng)
+- [@abdouazindiaye](https://learn.zone01dakar.sn/git/abdouazindiaye)
 
 ![Logo](https://go.dev/images/go-logo-white.svg)

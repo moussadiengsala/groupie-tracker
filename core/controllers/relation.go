@@ -11,10 +11,10 @@ func GetAllRelations() ([]models.Relation, error) {
 		return nil, err
 	}
 
-	relations, errParse := utils.Parse(resp, utils.RelationType{})
+	relations, errParse := utils.Parse(resp, models.RelationType{})
 	if errParse != nil {
 		return nil, errParse
 	}
-	
+
 	return relations.Index, nil
 }

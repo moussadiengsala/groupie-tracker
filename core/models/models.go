@@ -43,3 +43,18 @@ type Filters struct {
 	Location          string
 	Shearch           string
 }
+
+type LocationType struct {
+	Index []Locations `json:"index"`
+}
+type RelationType struct {
+	Index []Relation `json:"index"`
+}
+
+type DatesType struct {
+	Index []Date `json:"index"`
+}
+
+type FetchedType interface {
+	LocationType | RelationType | DatesType | Locations | Relation | Artist | Date
+}

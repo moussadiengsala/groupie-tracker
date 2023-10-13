@@ -21,11 +21,39 @@ func ParseDataArtists(data []byte) ([]models.Artist, error) {
 /*
 This file implements all the methods for an artist
 */
-func GetSingleArtist(id string) (models.SingleArtist, error) {
-	var artist models.Artist
-	var relation models.Relation
-	var dates models.Date
+// func GetSingleArtist(id string) (models.SingleArtist, error) {
+// 	var artist models.Artist
+// 	var relation models.Relation
+// 	var dates models.Date
+// 	var localFetch = func(str string) ([]byte, error) {
+// 		var resp, err = utils.Fetcher("https://groupietrackers.herokuapp.com/api/" + str + "/" + id)
+// 		if err != nil {
+// 			return nil, err
+// 		}
+// 		return resp, nil
+// 	}
+// 	var responseForArtist, erra = localFetch("artists")
+// 	var responseForRelation, errr = localFetch("relation")
+// 	var responseForDate, errd = localFetch("dates")
+// 	if errr != nil || erra != nil || errd != nil {
+// 		return models.SingleArtist{}, erra
+// 	}
+// 	jsonErrorA := json.Unmarshal(responseForArtist, &artist)
+// 	if jsonErrorA != nil {
+// 		return models.SingleArtist{}, jsonErrorA
+// 	}
+// 	jsonErroR := json.Unmarshal(responseForRelation, &relation)
+// 	if jsonErroR != nil {
+// 		return models.SingleArtist{}, jsonErroR
+// 	}
+// 	jsonErroD := json.Unmarshal(responseForDate, &dates)
+// 	if jsonErroD != nil {
+// 		return models.SingleArtist{}, jsonErroD
+// 	}
+// 	return models.SingleArtist{Artist: artist, Relation: relation, Dates: GetImportantDates(dates)}, nil
+// }
 
+func GetSingleArtist(id string) (models.SingleArtist, error) {
 	var localFetch = func(str string) ([]byte, error) {
 		var resp, err = utils.Fetcher("https://groupietrackers.herokuapp.com/api/" + str + "/" + id)
 		if err != nil {
@@ -33,25 +61,25 @@ func GetSingleArtist(id string) (models.SingleArtist, error) {
 		}
 		return resp, nil
 	}
-	var responseForArtist, erra = localFetch("artists")
-	var responseForRelation, errr = localFetch("relation")
-	var responseForDate, errd = localFetch("dates")
-	if errr != nil || erra != nil || errd != nil {
-		return models.SingleArtist{}, erra
+	var responses [][]byte
+	for _, v := range []string{"artists", "relation", "locations", "dates"} {
+		var resp, err = localFetch(v)
+		if err != nil {
+			return models.SingleArtist{}, err
+		}
+		responses = append(responses, resp)
 	}
-	jsonErrorA := json.Unmarshal(responseForArtist, &artist)
-	if jsonErrorA != nil {
-		return models.SingleArtist{}, jsonErrorA
+	if len(responses) != 4 {
+		return models.SingleArtist{}, errors.New("Something Went wrong")
 	}
-	jsonErroR := json.Unmarshal(responseForRelation, &relation)
-	if jsonErroR != nil {
-		return models.SingleArtist{}, jsonErroR
+	artist, erra := utils.Parse(responses[0], models.Artist{})
+	relation, errr := utils.Parse(responses[1], models.Relation{})
+	localion, errl := utils.Parse(responses[2], models.Locations{})
+	dates, errd := utils.Parse(responses[3], models.Date{})
+	if erra != nil || errr != nil || errl != nil || errd != nil {
+		return models.SingleArtist{}, errors.New("Something Went wrong")
 	}
-	jsonErroD := json.Unmarshal(responseForDate, &dates)
-	if jsonErroD != nil {
-		return models.SingleArtist{}, jsonErroD
-	}
-	return models.SingleArtist{Artist: artist, Relation: relation, Dates: GetImportantDates(dates)}, nil
+	return models.SingleArtist{Artist: artist, Relation: relation, Location: localion, Dates: GetImportantDates(dates)}, nil
 }
 
 func GetAllArtists() ([]models.Artist, error) {

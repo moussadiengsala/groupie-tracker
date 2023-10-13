@@ -122,18 +122,7 @@ func ErrorThrower(w http.ResponseWriter, errorCode int, message string) {
 	tmpl.Execute(w, models.Error{ErrorCode: errorCode, ErrorMessage: message})
 }
 
-type LocationType struct {
-	Index []models.Locations `json:"index"`
-}
-type RelationType struct {
-	Index []models.Relation `json:"index"`
-}
-
-type DatesType struct {
-	Index []models.Date `json:"index"`
-}
-
-func Parse[T LocationType | RelationType | DatesType](data []byte, d T) (T, error) {
+func Parse[T models.FetchedType](data []byte, d T) (T, error) {
 	err := json.Unmarshal(data, &d)
 	if err != nil {
 		return d, err

@@ -1,8 +1,10 @@
+
 // initialize communication with the platform
 // In your own code, replace variable window.apikey with your own apikey
 var platform = new H.service.Platform({
-    apikey: "gAf8Ysbfr4vC4zd2SPe26CafncgXEbH9iiHgTyNrhgE",
+    apikey: process.env.MAP_KEY,
 });
+
 var defaultLayers = platform.createDefaultLayers();
 document
     .getElementById("gt-map-container-resize")

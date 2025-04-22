@@ -1,30 +1,30 @@
-const filterInput = document.querySelector("#search");
-const suggestionSection = document.querySelector(".suggestions");
-const divs = document.querySelectorAll(".suggestions div");
-filterInput.addEventListener("input", filterDivs);
+document.addEventListener("DOMContentLoaded", () => {
+    const filterInput = document.querySelector("#search");
+    const suggestionSection = document.querySelector("#suggestion");
 
-function filterDivs() {
-    const filterText = filterInput.value.toLowerCase();
-    let hasMatch = false;
+    filterInput.addEventListener("input", () => {
+        const filterText = filterInput.value.toLowerCase();
+        const divs = suggestionSection.querySelectorAll("a");
+        let hasMatch = false;
 
-    if (filterText === "") {
-        suggestionSection.style.display = "none";
-    } else {
-        divs.forEach((div) => {
-            const pTagText = div.querySelector("p").textContent.toLowerCase();
-            if (pTagText.includes(filterText)) {
-                div.style.display = "block";
-                hasMatch = true;
+        if (filterText === "") {
+            suggestionSection.classList.add("hidden");
+        } else {
+            divs.forEach((div) => {
+                const pTag = div.querySelector("p");
+                if (pTag && pTag.textContent.toLowerCase().includes(filterText)) {
+                    div.classList.remove("hidden");
+                    hasMatch = true;
+                } else {
+                    div.classList.add("hidden");
+                }
+            });
+
+            if (hasMatch) {
+                suggestionSection.classList.remove("hidden");
             } else {
-                div.style.display = "none";
+                suggestionSection.classList.add("hidden");
             }
-        });
-
-        suggestionSection.style.display = hasMatch ? "block" : "none";
-    }
-}
-// filterInput.addEventListener("blur", function() {
-//     // Hide the suggestion section when the input loses focus
-//     suggestionSection.style.display = "none";
-// });
-filterDivs();
+        }
+    });
+});

@@ -27,33 +27,52 @@
         <meta name="description" content="Groupie Tracker is your ultimate companion for staying connected with your favorite artists. Explore detailed information about artists, track their latest releases, and never miss an upcoming concert again. Discover a world of music and live performances with Groupie Tracker.">
     </head>
     <body>
-        <aside class="lg:w-[20%] w-full h-[50px] lg:h-[100px] flex z-[999] bg-white lg:flex-col fixed lg:top-0 bottom-0 text-black lg:h-screen shadowed border-r-[1px] p-8 lg:p-4">
-            <!-- Aside content goes here -->
-            <div class="hidden lg:flex items-center mb-4"> <!-- Logo -->
-                <img class="w-16 h-16" src="https://www.decalserpent.com/assets/images/guitar%20stickers/SP-STK-GUT-00044(main).jpg" alt="Logo">
+        <aside id="aside" class="lg:w-64 w-full h-16 lg:h-screen flex z-50 bg-white lg:flex-col fixed lg:top-0 bottom-0 text-gray-800 shadow-lg border-r border-gray-200 lg:p-4 transition-all duration-300">
+            <!-- Logo Section -->
+            <div class="hidden lg:flex items-center mb-6 p-4 rounded-lg hover:bg-gray-50 transition-colors">
+                <div class="bg-indigo-100 p-2 rounded-lg mr-3">
+                    <svg width="28" height="32" fill="#22c55e" stroke="#22c55e" viewBox="0 0 36 40" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 15V31H5C5.52527 31 6.04541 31.1035 6.53076 31.3045C7.01599 31.5055 7.45703 31.8001 7.82837 32.1716C8.19983 32.543 8.49451 32.984 8.69556 33.4693C8.89648 33.9546 9 34.4747 9 35V40H21L36 25V9H31C30.4747 9 29.9546 8.89655 29.4692 8.69553C28.984 8.49451 28.543 8.19986 28.1716 7.82843C27.8002 7.457 27.5055 7.01602 27.3044 6.53073C27.1035 6.04544 27 5.5253 27 5V0H15L0 15ZM17 30H10V19L19 10H26V21L17 30Z" fill="#22c55e"></path>
+                    </svg>
+                </div>
                 <div>
-                    <p class="font-bold">Groupie Tracker</p>
-                    <div class="text-green-500 text-[10px] leading-4">Your Personal Guide to Musical Journeys</div>
+                    <p class="font-bold text-lg text-gray-900">Groupie Tracker</p>
+                    <div class="text-green-500 text-xs font-medium">Your Personal Guide to Musical Journeys</div>
                 </div>
             </div>
-
-            <nav class="flex lg:flex-col justify-around items-center lg:items-start w-full lg:gap-6 lg:p-2">
+        
+            <!-- Mobile Header (visible on small screens) -->
+            <div class="lg:hidden flex items-center justify-center w-full p-2 bg-white border-b border-gray-200">
+                <p class="font-bold text-gray-900">Groupie Tracker</p>
+            </div>
+        
+            <!-- Navigation Links -->
+            <nav class="flex lg:flex-col justify-around items-center lg:items-stretch w-full lg:gap-1 lg:px-2">
                 <!-- Home Link -->
-                <a href="/" class="flex items-center space-x-2 hover:text-green-400 m-0">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6A2.25 2.25 0 016 3.75h2.25A2.25 2.25 0 0110.5 6v2.25a2.25 2.25 0 01-2.25 2.25H6a2.25 2.25 0 01-2.25-2.25V6zM3.75 15.75A2.25 2.25 0 016 13.5h2.25a2.25 2.25 0 012.25 2.25V18a2.25 2.25 0 01-2.25 2.25H6A2.25 2.25 0 013.75 18v-2.25zM13.5 6a2.25 2.25 0 012.25-2.25H18A2.25 2.25 0 0120.25 6v2.25A2.25 2.25 0 0118 10.5h-2.25a2.25 2.25 0 01-2.25-2.25V6zM13.5 15.75a2.25 2.25 0 012.25-2.25H18a2.25 2.25 0 012.25 2.25V18A2.25 2.25 0 0118 20.25h-2.25A2.25 2.25 0 0113.5 18v-2.25z" />
-                    </svg>
-                    <p class="hidden lg:block">Home</p>
+                <a href="/" class="flex items-center lg:space-x-3 hover:bg-gray-50 rounded-lg p-3 lg:p-3 transition-colors w-full group">
+                    <div class="bg-gray-100 p-1.5 rounded-lg group-hover:bg-indigo-100 transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5 text-gray-600 group-hover:text-indigo-600">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6A2.25 2.25 0 016 3.75h2.25A2.25 2.25 0 0110.5 6v2.25a2.25 2.25 0 01-2.25 2.25H6a2.25 2.25 0 01-2.25-2.25V6zM3.75 15.75A2.25 2.25 0 016 13.5h2.25a2.25 2.25 0 012.25 2.25V18a2.25 2.25 0 01-2.25 2.25H6A2.25 2.25 0 013.75 18v-2.25zM13.5 6a2.25 2.25 0 012.25-2.25H18A2.25 2.25 0 0120.25 6v2.25A2.25 2.25 0 0118 10.5h-2.25a2.25 2.25 0 01-2.25-2.25V6zM13.5 15.75a2.25 2.25 0 012.25-2.25H18a2.25 2.25 0 012.25 2.25V18A2.25 2.25 0 0118 20.25h-2.25A2.25 2.25 0 0113.5 18v-2.25z" />
+                        </svg>
+                    </div>
+                    <span class="hidden lg:block font-medium text-gray-700 group-hover:text-indigo-700">Home</span>
                 </a>
+        
                 <!-- Artists Link -->
-                <a href="/artists" class="flex items-center space-x-2 hover:text-green-400 m-0" style="margin-top: 0;">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 9l10.5-3m0 6.553v3.75a2.25 2.25 0 01-1.632 2.163l-1.32.377a1.803 1.803 0 11-.99-3.467l2.31-.66a2.25 2.25 0 001.632-2.163zm0 0V2.25L9 5.25v10.303m0 0v3.75a2.25 2.25 0 01-1.632 2.163l-1.32.377a1.803 1.803 0 01-.99-3.467l2.31-.66A2.25 2.25 0 009 15.553z" />
-                    </svg>
-                    <p class="hidden lg:block">Artists</p>
+                <a href="/artists" class="flex items-center lg:space-x-3 hover:bg-gray-50 rounded-lg p-3 lg:p-3 transition-colors w-full group">
+                    <div class="bg-gray-100 p-1.5 rounded-lg group-hover:bg-indigo-100 transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5 text-gray-600 group-hover:text-indigo-600">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 9l10.5-3m0 6.553v3.75a2.25 2.25 0 01-1.632 2.163l-1.32.377a1.803 1.803 0 11-.99-3.467l2.31-.66a2.25 2.25 0 001.632-2.163zm0 0V2.25L9 5.25v10.303m0 0v3.75a2.25 2.25 0 01-1.632 2.163l-1.32.377a1.803 1.803 0 01-.99-3.467l2.31-.66A2.25 2.25 0 009 15.553z" />
+                        </svg>
+                    </div>
+                    <span class="hidden lg:block font-medium text-gray-700 group-hover:text-indigo-700">Artists</span>
                 </a>
             </nav>
-            <fo class="p-2 bg-white border-t-[1px] text-xs text-center z-[99] hidden lg:block mt-auto bottom-0 text-gray-500">Made with ❤️ By Abdou Aziz Ndiaye & Moussa Dieng from 🇸🇳</fo>
+        
+            <!-- Footer -->
+            <footer class="p-4 bg-white border-t border-gray-200 text-xs text-center hidden lg:block mt-auto text-gray-500">
+                Made with <span class="text-red-500">❤️</span> By Abdou Aziz Ndiaye & Moussa Dieng from <span class="font-semibold">🇸🇳</span>
+            </footer>
         </aside>
         <main class="lg:w-[80%] lg:ml-auto h-fit mb-[90px] lg:mb-4 p-4 lg:p-8">
             <div class="underline back cursor-pointer flex items-center gap-2">

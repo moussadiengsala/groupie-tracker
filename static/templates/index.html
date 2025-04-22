@@ -26,186 +26,216 @@
         <meta name="description" content="Groupie Tracker is your ultimate companion for staying connected with your favorite artists. Explore detailed information about artists, track their latest releases, and never miss an upcoming concert again. Discover a world of music and live performances with Groupie Tracker.">
     </head>
     <body>
-        <aside id="aside" class="lg:w-[20%] w-full h-[50px] lg:h-[100px] flex z-[999] bg-white lg:flex-col fixed lg:top-0 bottom-0 text-black lg:h-screen shadowed border-r-[1px] p-8 lg:p-4">
-            <!-- Aside content goes here -->
-            <div class="hidden lg:flex items-center mb-4"> <!-- Logo -->
-                <img class="w-16 h-16" src="https://www.decalserpent.com/assets/images/guitar%20stickers/SP-STK-GUT-00044(main).jpg" alt="Logo">
+        <aside id="aside" class="lg:w-64 w-full h-16 lg:h-screen flex z-50 bg-white lg:flex-col fixed lg:top-0 bottom-0 text-gray-800 shadow-lg border-r border-gray-200 lg:p-4 transition-all duration-300">
+            <!-- Logo Section -->
+            <div class="hidden lg:flex items-center mb-6 p-4 rounded-lg hover:bg-gray-50 transition-colors">
+                <div class="bg-indigo-100 p-2 rounded-lg mr-3">
+                    <svg width="28" height="32" fill="#22c55e" stroke="#22c55e" viewBox="0 0 36 40" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 15V31H5C5.52527 31 6.04541 31.1035 6.53076 31.3045C7.01599 31.5055 7.45703 31.8001 7.82837 32.1716C8.19983 32.543 8.49451 32.984 8.69556 33.4693C8.89648 33.9546 9 34.4747 9 35V40H21L36 25V9H31C30.4747 9 29.9546 8.89655 29.4692 8.69553C28.984 8.49451 28.543 8.19986 28.1716 7.82843C27.8002 7.457 27.5055 7.01602 27.3044 6.53073C27.1035 6.04544 27 5.5253 27 5V0H15L0 15ZM17 30H10V19L19 10H26V21L17 30Z" fill="#22c55e"></path>
+                    </svg>
+                </div>
                 <div>
-                    <p class="font-bold">Groupie Tracker</p>
-                    <div class="text-green-500 text-[10px] leading-4">Your Personal Guide to Musical Journeys</div>
+                    <p class="font-bold text-lg text-gray-900">Groupie Tracker</p>
+                    <div class="text-green-500 text-xs font-medium">Your Personal Guide to Musical Journeys</div>
                 </div>
             </div>
-
-            <nav class="flex lg:flex-col justify-around items-center lg:items-start w-full lg:gap-6 lg:p-2">
+        
+            <!-- Mobile Header (visible on small screens) -->
+            <div class="lg:hidden flex items-center justify-center w-full p-2 bg-white border-b border-gray-200">
+                <p class="font-bold text-gray-900">Groupie Tracker</p>
+            </div>
+        
+            <!-- Navigation Links -->
+            <nav class="flex lg:flex-col justify-around items-center lg:items-stretch w-full lg:gap-1 lg:px-2">
                 <!-- Home Link -->
-                <a href="/" class="flex items-center space-x-2 hover:text-green-400 m-0">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6A2.25 2.25 0 016 3.75h2.25A2.25 2.25 0 0110.5 6v2.25a2.25 2.25 0 01-2.25 2.25H6a2.25 2.25 0 01-2.25-2.25V6zM3.75 15.75A2.25 2.25 0 016 13.5h2.25a2.25 2.25 0 012.25 2.25V18a2.25 2.25 0 01-2.25 2.25H6A2.25 2.25 0 013.75 18v-2.25zM13.5 6a2.25 2.25 0 012.25-2.25H18A2.25 2.25 0 0120.25 6v2.25A2.25 2.25 0 0118 10.5h-2.25a2.25 2.25 0 01-2.25-2.25V6zM13.5 15.75a2.25 2.25 0 012.25-2.25H18a2.25 2.25 0 012.25 2.25V18A2.25 2.25 0 0118 20.25h-2.25A2.25 2.25 0 0113.5 18v-2.25z" />
-                    </svg>
-                    <p class="hidden lg:block">Home</p>
+                <a href="/" class="flex items-center lg:space-x-3 hover:bg-gray-50 rounded-lg p-3 lg:p-3 transition-colors w-full group">
+                    <div class="bg-gray-100 p-1.5 rounded-lg group-hover:bg-indigo-100 transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5 text-gray-600 group-hover:text-indigo-600">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6A2.25 2.25 0 016 3.75h2.25A2.25 2.25 0 0110.5 6v2.25a2.25 2.25 0 01-2.25 2.25H6a2.25 2.25 0 01-2.25-2.25V6zM3.75 15.75A2.25 2.25 0 016 13.5h2.25a2.25 2.25 0 012.25 2.25V18a2.25 2.25 0 01-2.25 2.25H6A2.25 2.25 0 013.75 18v-2.25zM13.5 6a2.25 2.25 0 012.25-2.25H18A2.25 2.25 0 0120.25 6v2.25A2.25 2.25 0 0118 10.5h-2.25a2.25 2.25 0 01-2.25-2.25V6zM13.5 15.75a2.25 2.25 0 012.25-2.25H18a2.25 2.25 0 012.25 2.25V18A2.25 2.25 0 0118 20.25h-2.25A2.25 2.25 0 0113.5 18v-2.25z" />
+                        </svg>
+                    </div>
+                    <span class="hidden lg:block font-medium text-gray-700 group-hover:text-indigo-700">Home</span>
                 </a>
+        
                 <!-- Artists Link -->
-                <a href="/artists" class="flex items-center space-x-2 hover:text-green-400 m-0" style="margin-top: 0;">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 9l10.5-3m0 6.553v3.75a2.25 2.25 0 01-1.632 2.163l-1.32.377a1.803 1.803 0 11-.99-3.467l2.31-.66a2.25 2.25 0 001.632-2.163zm0 0V2.25L9 5.25v10.303m0 0v3.75a2.25 2.25 0 01-1.632 2.163l-1.32.377a1.803 1.803 0 01-.99-3.467l2.31-.66A2.25 2.25 0 009 15.553z" />
-                    </svg>
-                    <p class="hidden lg:block">Artists</p>
+                <a href="/artists" class="flex items-center lg:space-x-3 hover:bg-gray-50 rounded-lg p-3 lg:p-3 transition-colors w-full group">
+                    <div class="bg-gray-100 p-1.5 rounded-lg group-hover:bg-indigo-100 transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5 text-gray-600 group-hover:text-indigo-600">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 9l10.5-3m0 6.553v3.75a2.25 2.25 0 01-1.632 2.163l-1.32.377a1.803 1.803 0 11-.99-3.467l2.31-.66a2.25 2.25 0 001.632-2.163zm0 0V2.25L9 5.25v10.303m0 0v3.75a2.25 2.25 0 01-1.632 2.163l-1.32.377a1.803 1.803 0 01-.99-3.467l2.31-.66A2.25 2.25 0 009 15.553z" />
+                        </svg>
+                    </div>
+                    <span class="hidden lg:block font-medium text-gray-700 group-hover:text-indigo-700">Artists</span>
                 </a>
             </nav>
-            <fo class="p-2 bg-white border-t-[1px] text-xs text-center z-[99] hidden lg:block mt-auto bottom-0 text-gray-500">Made with ❤️ By Abdou Aziz Ndiaye & Moussa Dieng from 🇸🇳</fo>
+        
+            <!-- Footer -->
+            <footer class="p-4 bg-white border-t border-gray-200 text-xs text-center hidden lg:block mt-auto text-gray-500">
+                Made with <span class="text-red-500">❤️</span> By Abdou Aziz Ndiaye & Moussa Dieng from <span class="font-semibold">🇸🇳</span>
+            </footer>
         </aside>
 
+
+
+
+
         <main class="lg:w-[80%] lg:ml-auto overflow-x-hidden overflow-hidden flex flex-col min-h-screen">
-            <header class="h-auto shadowed bg-white p-2 lg:p-4">
-                <form method="post" action="/artists">
-                    <div class="relative mx-4">
-                        <div
-                            class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none"
-                        >
-                            <svg
-                                aria-hidden="true"
-                                class="w-5 h-5 text-gray-500 dark:text-gray-400"
-                                fill="none"
-                                stroke="currentColor"
-                                viewBox="0 0 24 24"
-                                xmlns="http://www.w3.org/2000/svg"
-                            >
-                                <path
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    stroke-width="2"
-                                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                                ></path>
+            <header class="sticky top-0 z-40 bg-white shadow-sm p-3 lg:p-4 border-b border-gray-100">
+                <form method="post" action="/artists" class="max-w-4xl mx-auto">
+                    <div class="relative">
+                        <!-- Search Icon -->
+                        <div class="absolute inset-y-0 left-0 flex items-center pl-4 pointer-events-none">
+                            <svg aria-hidden="true" class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
                             </svg>
                         </div>
+            
+                        <!-- Search Input -->
                         <input
                             type="search"
                             id="search"
                             name="search"
-                            class="block w-full lg:w-[330px] p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-xl bg-gray-50 focus:ring-blue-500 focus:border-blue-500"
-                            placeholder="Search artists, members, release date......"
+                            class="block w-full p-4 pl-12 text-sm text-gray-800 border border-gray-200 rounded-xl bg-white focus:ring-2 focus:ring-green-400 focus:border-green-400 transition-all duration-200 placeholder-gray-400"
+                            placeholder="Search artists, members, release date..."
                             required
+                            autocomplete="off"
                         />
-                        <div style="display: none;" id="suggestion" class="shadowed suggestions flex gap-4 flex-col bg-white absolute max-h-[300px] w-full lg:w-[330px] rounded-md p-4 overflow-scroll z-[999]">
+            
+                        <!-- Suggestions Dropdown -->
+                        <div id="suggestion" class="hidden absolute mt-1 w-full bg-white rounded-xl shadow-lg border border-gray-100 max-h-[400px] overflow-y-auto z-50">
                             {{ range .Datas }}
                                 {{ $Image := .Artist.Image }}
                                 {{ $ID := .Artist.Id }}
-
-                                <!-- Creation Date -->
-                                <a class="flex justify-between" href="artists/{{.Artist.Id}}">
-                                    <div class="datas w-full mb-4">
-                                        <span class="flex w-full justify-between">
-                                            <span>
-                                                <p class="capitalize">{{.Artist.CreationDate}}</p>
-                                                <small class="text-green-400">Creation Date</small>
-                                            </span>
-                                            <img class="w-10 h-10 shadowed rounded-full" src="{{.Artist.Image}}" alt="">
-                                        </span>
+            
+                                <!-- Artist -->
+                                <a href="artists/{{.Artist.Id}}" class="flex items-center p-3 hover:bg-gray-50 transition-colors border-b border-gray-100 last:border-0 group">
+                                    <img class="w-10 h-10 rounded-full object-cover shadow-sm mr-3" src="{{.Artist.Image}}" alt="{{.Artist.Name}}">
+                                    <div>
+                                        <p class="font-medium text-gray-800 group-hover:text-green-500">{{.Artist.Name}}</p>
+                                        <span class="text-xs text-green-500 font-medium">Artist</span>
                                     </div>
                                 </a>
-                                <!-- First Album Date -->
-                                <a class="flex justify-between" href="artists/{{.Artist.Id}}">
-                                    <div class="datas w-full mb-4">
-                                        <span class="flex w-full justify-between">
-                                            <span>
-                                                <p class="capitalize">{{.Artist.FirstAlbum}}</p>
-                                                <small class="text-green-400">First Album</small>
-                                            </span>
-                                            <img class="w-10 h-10 shadowed rounded-full" src="{{.Artist.Image}}" alt="">
-                                        </span>
-                                    </div>
-                                </a>
-                                    <!-- Location -->
-                                    {{ range $key, $value := .Relation.DateLocation }}
-                                        <a href="artists/{{$ID}}">
-                                        <div class="datas  mb-4">
-                                            <span class="flex w-full justify-between">
-                                                <span>
-                                                    <p class="locations capitalize">{{$key}}</p>
-                                                    <small class="text-green-400">Location</small>
-                                                </span>
-                                                <img class="w-10 h-10 shadowed rounded-full" src="{{$Image}}" alt="No Found">
-                                            </span>
+            
+                                <!-- Members (Icon Only) -->
+                                {{ range .Artist.Members }}
+                                    <a href="artists/{{$ID}}" class="flex items-center p-3 hover:bg-gray-50 transition-colors border-b border-gray-100 last:border-0 group">
+                                        <div class="w-10 h-10 flex items-center justify-center bg-green-50 text-green-500 rounded-full shadow-sm mr-3">
+                                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M5.121 17.804A9.935 9.935 0 0012 20a9.935 9.935 0 006.879-2.196A6 6 0 0012 13a6 6 0 00-6.879 4.804z"></path>
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                            </svg>
                                         </div>
-                                        </a>
-                                    {{end}}
-
-
-                                    {{ range .Artist.Members }}
-                                    <a href="artists/{{$ID}}">
-                                        <div class="datas mb-4">
-                                            <span class="flex justify-between w-full">
-                                                <span>
-                                                    <p>{{.}}</p>
-                                                    <small class="text-green-400">Member</small>
-                                                </span>
-                                                <img class="w-10 h-10 shadowed rounded-full" src="{{$Image}}" alt="No Found">
-                                            </span>
+                                        <div>
+                                            <p class="font-medium text-gray-800 group-hover:text-green-500">{{.}}</p>
+                                            <span class="text-xs text-green-500 font-medium">Member</span>
                                         </div>
                                     </a>
                                 {{ end }}
-                                <!-- Artist -->
-                                <a class="flex justify-between" href="artists/{{.Artist.Id}}">
-                                    <div class="datas w-full mb-4">
-                                        <span class="flex w-full justify-between">
-                                            <span>
-                                                <p>{{.Artist.Name}}</p>
-                                                <small class="text-green-400">Artist</small>
-                                            </span>
-                                            <img class="w-10 h-10 shadowed rounded-full" src="{{.Artist.Image}}" alt="">
-                                        </span>
+            
+                                <!-- Creation Date -->
+                                <a href="artists/{{.Artist.Id}}" class="flex items-center p-3 hover:bg-gray-50 transition-colors border-b border-gray-100 last:border-0 group">
+                                    <div class="w-10 h-10 rounded-full bg-green-50 flex items-center justify-center shadow-sm mr-3">
+                                        <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <p class="font-medium text-gray-800 group-hover:text-green-500">{{.Artist.CreationDate}}</p>
+                                        <span class="text-xs text-green-500 font-medium">Creation Date</span>
                                     </div>
                                 </a>
-                            {{end}}
+            
+                                <!-- First Album -->
+                                <a href="artists/{{.Artist.Id}}" class="flex items-center p-3 hover:bg-gray-50 transition-colors border-b border-gray-100 last:border-0 group">
+                                    <div class="w-10 h-10 rounded-full bg-green-50 flex items-center justify-center shadow-sm mr-3">
+                                        <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3"></path>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <p class="font-medium text-gray-800 group-hover:text-green-500">{{.Artist.FirstAlbum}}</p>
+                                        <span class="text-xs text-green-500 font-medium">First Album</span>
+                                    </div>
+                                </a>
+            
+                                <!-- Locations -->
+                                {{ range $key, $value := .Relation.DateLocation }}
+                                    <a href="artists/{{$ID}}" class="flex items-center p-3 hover:bg-gray-50 transition-colors border-b border-gray-100 last:border-0 group">
+                                        <div class="w-10 h-10 rounded-full bg-green-50 flex items-center justify-center shadow-sm mr-3">
+                                            <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <p class="font-medium text-gray-800 group-hover:text-green-500 capitalize">{{$key}}</p>
+                                            <span class="text-xs text-green-500 font-medium">Location</span>
+                                        </div>
+                                    </a>
+                                {{ end }}
+                            {{ end }}
                         </div>
                     </div>
                 </form>
             </header>
-                
-                <!-- Slider -->
-            <section id="slider" class="h-fit overflow-hidden w-full relative">
-                <!-- Artist Card -->
-                <div class="flex justify-between items-center p-4 w-full">
-                    <a href="/artites" class="text-2xl font-bold my-4 text-green-500">All Artists</a>
-                    <!-- button let/right -->
-                    <div>
-                        <button id="previous" class="p-1 text-white rounded-full bg-black/60">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            
+            <!-- Slider -->
+            <section id="slider" class="w-full relative px-4 lg:px-8 py-6 bg-white">
+                <!-- Header with navigation -->
+                <div class="flex justify-between items-center mb-6">
+                    <h2 class="text-2xl font-bold text-gray-800">
+                        <span class="text-green-500">All Artists</span>
+                    </h2>
+                    
+                    <!-- Navigation buttons -->
+                    <div class="flex gap-2">
+                        <button id="previous" class="p-2 rounded-full bg-white border border-gray-200 text-gray-600 hover:bg-green-500 hover:text-white transition-colors duration-200 shadow-sm disabled:opacity-50 disabled:cursor-not-allowed" disabled>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
                             </svg>                              
                         </button>
-
-                        <button id="next" class="p-1 text-white rounded-full bg-black/60 ">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            
+                        <button id="next" class="p-2 rounded-full bg-white border border-gray-200 text-gray-600 hover:bg-green-500 hover:text-white transition-colors duration-200 shadow-sm">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                             </svg>                              
                         </button>
                     </div>
-
                 </div>
-               
-                <!-- <div class="overflow-x-scroll relative w-full h-full"> -->
-                    <!-- class="absolute top-1/2 transform -translate-y-1/2 flex gap-16 lg:mx-16 w-max transition duration-1000 ease-in-out bg-green-500" -->
-                <div class="inline-flex">
-                    <div id="carousel" class="flex flex-nowrap h-fit transition-all duration-1000">
+            
+                <!-- Carousel container -->
+                <div class="relative overflow-hidden">
+                    <div id="carousel" class="flex transition-all duration-500 ease-out gap-6">
                         {{ range $i, $elem := .Datas }}
-                        <div class="w-max basis-full px-4 {{if not $i}}active{{end}}">
-                            <a href="/artists/{{ $elem.Artist.Id }}">
-                                <img
-                                    class="h-[200px] aspect-square rounded-2xl shadowed object-cover"
-                                    src="{{$elem.Artist.Image}}"
-                                    alt=""
-                            /></a>
-                            <!-- Card Title -->
-                            <div class="my-2">
-                                <h1 class="font-bold">{{$elem.Artist.Name}}</h1>
-                                <small class="text-gray-500">{{$elem.Artist.Name}}</small>
-                            </div>
-                            <!-- End of Card title -->
+                        <div class="flex-shrink-0 w-[180px] sm:w-[200px] {{if not $i}}active{{end}}">
+                            <a href="/artists/{{ $elem.Artist.Id }}" class="group block">
+                                <div class="relative overflow-hidden rounded-xl shadow-md mb-3 aspect-square">
+                                    <img
+                                        class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                                        src="{{$elem.Artist.Image}}"
+                                        alt="{{$elem.Artist.Name}}"
+                                    />
+                                    <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                                </div>
+                                
+                                <!-- Card info -->
+                                <div class="px-1">
+                                    <h3 class="font-bold text-gray-800 truncate group-hover:text-green-500 transition-colors">{{$elem.Artist.Name}}</h3>
+                                    <p class="text-sm text-gray-500 truncate">{{ len $elem.Artist.Members }} members</p>
+                                </div>
+                            </a>
                         </div>
                         {{ end }}
                     </div>
+                </div>
             </section>
+
             <!-- End of slider -->
 
 
